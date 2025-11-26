@@ -1,0 +1,20 @@
+[
+  {
+    "domain_id": "ds",
+    "name": "Data Science",
+    "description": "Covers ML, statistics, analytics, data engineering basics.",
+    "tags": ["machine learning", "python", "statistics"]
+  },
+  {
+    "domain_id": "webdev",
+    "name": "Web Development",
+    "description": "Frontend + backend + full stack development.",
+    "tags": ["html", "css", "javascript", "react", "node"]
+  },
+  {
+    "domain_id": "aiml",
+    "name": "AI / ML",
+    "description": "Deep learning, neural networks, LLMs, NLP.",
+    "tags": ["deep learning", "nlp", "transformers"]
+  }
+]

@@ -1,0 +1,24 @@
+[
+  {
+    "test_id": "google_ds_basic",
+    "company_id": "google",
+    "domain_id": "ds",
+    "test_type": "Aptitude",
+    "duration": 20,
+    "question_ids": ["q1", "q2", "q3"],
+    "metadata": {
+      "difficulty": "easy"
+    }
+  },
+  {
+    "test_id": "tcs_aptitude",
+    "company_id": "tcs",
+    "domain_id": "webdev",
+    "test_type": "Aptitude",
+    "duration": 15,
+    "question_ids": ["q4", "q5", "q6"],
+    "metadata": {
+      "difficulty": "medium"
+    }
+  }
+]

@@ -1,0 +1,43 @@
+[
+  {
+    "question_id": "q1",
+    "text": "What is overfitting in machine learning?",
+    "type": "short",
+    "expected_keywords": ["overfitting", "train", "test", "generalization"],
+    "difficulty": "easy"
+  },
+  {
+    "question_id": "q2",
+    "text": "Which metric is commonly used for classification?",
+    "type": "mcq",
+    "options": ["Accuracy", "MSE", "RMSE", "MAPE"],
+    "expected_answer": "Accuracy",
+    "difficulty": "easy"
+  },
+  {
+    "question_id": "q3",
+    "text": "Explain the difference between supervised and unsupervised learning.",
+    "type": "short",
+    "expected_keywords": ["labeled", "unlabeled", "classification", "clustering"],
+    "difficulty": "medium"
+  },
+  {
+    "question_id": "q4",
+    "text": "What is the output of 2 + 2 * 3?",
+    "type": "mcq",
+    "options": ["12", "8", "6", "4"],
+    "expected_answer": "8"
+  },
+  {
+    "question_id": "q5",
+    "text": "Define Time Complexity.",
+    "type": "short",
+    "expected_keywords": ["time complexity", "algorithm", "performance"]
+  },
+  {
+    "question_id": "q6",
+    "text": "Write a simple Python function to check if a number is even.",
+    "type": "coding",
+    "expected_keywords": ["def", "return", "%", "== 0"]
+  }
+]

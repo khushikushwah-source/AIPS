@@ -1,0 +1,53 @@
+[
+  {
+    "company_id": "google",
+    "name": "Google",
+    "domain_ids": ["ds", "webdev", "aiml"],
+    "logo_url": "",
+    "hiring_flow": [
+      {
+        "stage_name": "Online Assessment",
+        "description": "Aptitude, coding, reasoning",
+        "tips": "Practice leetcode medium problems"
+      },
+      {
+        "stage_name": "Technical Interview 1",
+        "description": "Data structures + algorithms",
+        "tips": "Focus on graphs, DP, trees"
+      },
+      {
+        "stage_name": "Technical Interview 2",
+        "description": "System design + problem solving",
+        "tips": "Explain trade-offs clearly"
+      },
+      {
+        "stage_name": "HR Interview",
+        "description": "Behavioral + cultural fit",
+        "tips": "Use STAR method"
+      }
+    ]
+  },
+  {
+    "company_id": "tcs",
+    "name": "TCS",
+    "domain_ids": ["webdev", "ds"],
+    "logo_url": "",
+    "hiring_flow": [
+      {
+        "stage_name": "NQT Exam",
+        "description": "Aptitude + verbal + reasoning",
+        "tips": "Practice time management"
+      },
+      {
+        "stage_name": "Technical Interview",
+        "description": "Basics of programming & OS",
+        "tips": "Know your projects well"
+      },
+      {
+        "stage_name": "HR Interview",
+        "description": "Communication & confidence test",
+        "tips": "Be honest & clear"
+      }
+    ]
+  }
+]

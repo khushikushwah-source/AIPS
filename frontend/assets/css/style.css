@@ -1,0 +1,85 @@
+/* style.css — basic modern styling for Streamlit HTML snippets and any static pages */
+
+:root{
+  --accent:#2563eb;
+  --muted:#6b7280;
+  --card-bg:#ffffff;
+  --surface:#f8fafc;
+  --radius:10px;
+  --shadow: 0 6px 18px rgba(15,23,42,0.06);
+  --glass: rgba(255,255,255,0.6);
+  font-family: Inter, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+body {
+  background-color: var(--surface);
+  color: #0f172a;
+  font-family: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+/* Card */
+.aips-card{
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+/* Buttons */
+.aips-btn {
+  display: inline-block;
+  padding: 8px 14px;
+  border-radius: 8px;
+  background: var(--accent);
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+.aips-btn.secondary {
+  background: transparent;
+  color: var(--accent);
+  border: 1px solid rgba(37,99,235,0.12);
+}
+
+/* Header */
+.aips-header {
+  display:flex;
+  gap:12px;
+  align-items:center;
+  margin-bottom:18px;
+}
+.aips-logo {
+  width:48px;
+  height:48px;
+  display:block;
+}
+/* Tags */
+.aips-tag {
+  display:inline-block;
+  background:#eef2ff;
+  color:#3730a3;
+  padding:4px 8px;
+  border-radius:999px;
+  font-size:12px;
+  margin-right:6px;
+}
+
+/* Hiring step */
+.aips-step {
+  border-left:4px solid #e6edf8;
+  padding:12px 16px;
+  background:#fff;
+  border-radius:8px;
+  margin-bottom:12px;
+}
+
+/* Responsive */
+@media (max-width:600px){
+  .aips-card { padding:12px; }
+  .aips-header { gap:8px; }
+}
