@@ -2,12 +2,15 @@ import streamlit as st
 import smtplib
 import random
 import string
+from firebase_config import users_ref
+from common_ui import setup_page
 
-st.set_page_config(page_title="Register | AIPS", page_icon="📝", layout="wide")
+# ---------------- Page Setup ----------------
+setup_page("Register", "pages/1_Register.py")
 
-# ---------------- Gmail SMTP Config ----------------
-SENDER_EMAIL = "workmail.khushikushwah@gmail.coM"            # replace
-SENDER_PASSWORD = "fmfzqrcgvfcxnugr"           # replace (not gmail password, APP password)
+# ---------------- Email SMTP Config ----------------
+SENDER_EMAIL = "workmail.khushikushwah@gmail.com"          # CHANGE
+SENDER_PASSWORD = "fmfzqrcgvfcxnugr"         # CHANGE (NOT Gmail login password)
 
 def send_otp_email(receiver, otp):
     subject = "Your AIPS Email Verification OTP"
@@ -27,41 +30,62 @@ if "reg_email_verified" not in st.session_state:
 if "reg_email_for_otp" not in st.session_state:
     st.session_state["reg_email_for_otp"] = None
 
-st.title("Register")
-
+# ---------------- Registration Form ----------------
 name = st.text_input("Name")
 
-# EMAIL + SEND OTP beside email input
+# email + send OTP button
 col1, col2 = st.columns([4, 1])
 with col1:
     email = st.text_input("Email (Gmail only)")
+    email_error_ph = st.empty()
 with col2:
     send_otp = st.button("Send OTP")
 
 
-# OTP field under it
+# ---------------- OTP Verification ----------------
 otp_input = st.text_input("Enter OTP received on email")
-
 if st.button("Verify OTP"):
-    if not st.session_state.get("reg_otp"):
-        st.error("Send OTP first.")
-    elif otp_input == st.session_state["reg_otp"]:
+    if otp_input == st.session_state["reg_otp"]:
         st.session_state["reg_email_verified"] = True
-        st.session_state["reg_otp"] = None  # remove otp (like firebase delete)
+        st.session_state["reg_otp"] = None
         st.success("Email verified successfully ✔")
     else:
         st.error("Incorrect OTP ❌")
 
-phone = st.text_input("Phone Number (10 digits)")
-password = st.text_input("Password", type="password")
-confirm_password = st.text_input("Confirm Password", type="password")
+st.markdown("---")
 
-# --- Send OTP Button Action ---
+# phone
+phone = st.text_input("Phone Number (10 digits)")
+phone_error_ph = st.empty()
+
+# password + confirm password
+colp1, colp2 = st.columns(2)
+with colp1:
+    password = st.text_input("Password", type="password")
+with colp2:
+    confirm_password = st.text_input("Confirm Password", type="password")
+password_error_ph = st.empty()
+
+# ---------------- Send OTP Logic ----------------
 if send_otp:
-    if not email:
-        st.warning("Enter email first.")
+    email_error_ph.empty()
+
+    # check already registered in Firebase
+    if users_ref.document(email).get().exists:
+        email_error_ph.markdown(
+            "<span style='color:#f87171; font-size:12px;'>This email is already registered. Please go to Login.</span>",
+            unsafe_allow_html=True
+        )
+    elif not email:
+        email_error_ph.markdown(
+            "<span style='color:#facc15; font-size:12px;'>Please enter email.</span>",
+            unsafe_allow_html=True
+        )
     elif not email.lower().endswith("@gmail.com"):
-        st.warning("Email must end with @gmail.com")
+        email_error_ph.markdown(
+            "<span style='color:#f97316; font-size:12px;'>Email must end with @gmail.com.</span>",
+            unsafe_allow_html=True
+        )
     else:
         otp = "".join(random.choices(string.digits, k=6))
         st.session_state["reg_otp"] = otp
@@ -71,37 +95,73 @@ if send_otp:
         try:
             send_otp_email(email, otp)
             st.success(f"OTP sent to {email}")
-        except Exception as e:
-            st.error("Failed to send OTP. Check Gmail & App Password in code.")
-            st.stop()
+        except Exception:
+            st.error("Failed to send OTP. Check Gmail App Password in code.")
 
 
-st.markdown("---")
+# ---------------- Final Register Button ----------------
+register_clicked = st.button("Register")
 
-def validate_phone(num):
-    return num.isdigit() and len(num) == 10
+if register_clicked:
+    email_error_ph.empty()
+    phone_error_ph.empty()
+    password_error_ph.empty()
+    ok = True
 
-# Final Register
-if st.button("Register"):
+    # Empty field validation
     if not all([name, email, phone, password, confirm_password]):
         st.error("Fill all fields correctly ❌")
-    elif not email.lower().endswith("@gmail.com"):
-        st.error("Invalid Gmail ❌")
-    elif not validate_phone(phone):
-        st.error("Invalid 10‑digit phone number ❌")
-    elif password != confirm_password:
-        st.error("Password & Confirm Password do not match ❌")
-    elif not st.session_state["reg_email_verified"]:
-        st.error("Verify your email before registering ❌")
-    else:
-        st.session_state["registered_email"] = email
-        st.session_state["registered_password"] = password
+        ok = False
 
+    # Email validation
+    if not email.lower().endswith("@gmail.com"):
+        email_error_ph.markdown(
+            "<span style='color:#f97316; font-size:12px;'>Email must end with @gmail.com.</span>",
+            unsafe_allow_html=True
+        )
+        ok = False
+    elif users_ref.document(email).get().exists:
+        email_error_ph.markdown(
+            "<span style='color:#f87171; font-size:12px;'>This email is already registered. Please go to Login.</span>",
+            unsafe_allow_html=True
+        )
+        ok = False
+
+    # Phone validation
+    if not phone.isdigit() or len(phone) != 10:
+        phone_error_ph.markdown(
+            "<span style='color:#f97316; font-size:12px;'>Enter a valid 10‑digit phone number.</span>",
+            unsafe_allow_html=True
+        )
+        ok = False
+
+    # Password field validation
+    if password != confirm_password:
+        password_error_ph.markdown(
+            "<span style='color:#f97316; font-size:12px;'>Password & Confirm Password do not match.</span>",
+            unsafe_allow_html=True
+        )
+        ok = False
+
+    # OTP verified
+    if not st.session_state["reg_email_verified"]:
+        st.error("Verify your email before registering ❌")
+        ok = False
+
+    # Save to Firebase
+    if ok:
+        users_ref.document(email).set({
+            "name": name,
+            "email": email,
+            "phone": phone,
+            "password": password
+        })
         st.success(f"{name}, you registered successfully 🎉")
         st.info("You can now login.")
-
-go_login = st.button("Go to Login")
-if go_login:
+        st.switch_page("pages/2_Login.py")
+        
+# Go to login
+st.write("")
+st.write("Already have an account?")
+if st.button("Go to Login"):
     st.switch_page("pages/2_Login.py")
-
-        # TODO: Add user to Firebase Backend

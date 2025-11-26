@@ -1,38 +1,47 @@
 import streamlit as st
+from firebase_config import users_ref
+from common_ui import setup_page
 
-st.set_page_config(page_title="Login | AIPS", page_icon="🔑", layout="wide")
+# ---------------- Page Setup ----------------
+setup_page("Login", "pages/2_Login.py")
 
-# hide menu/header/footer
-st.markdown("""
-    <style>
-        #MainMenu {visibility: hidden;}
-        header {visibility: hidden;}
-        footer {visibility: hidden;}
-    </style>
-""", unsafe_allow_html=True)
-
-st.title("Login")
-
+# ---------------- Form ----------------
 email = st.text_input("Email")
 password = st.text_input("Password", type="password")
+error = st.empty()  # inline error placeholder
 
-if st.button("Login"):
-    registered_email = st.session_state.get("registered_email")
-    registered_password = st.session_state.get("registered_password")
+login_clicked = st.button("Login")
 
-    if not registered_email or not registered_password:
-        st.error("No account found. Register first.")
-    elif email == registered_email and password == registered_password:
-        st.success("Successfully logged in 🎉")
-        st.session_state["logged_in"] = True
+if login_clicked:
+    error.empty()
+
+    if not email or not password:
+        error.markdown("<span style='color:#f87171;'>Enter both Email and Password.</span>", unsafe_allow_html=True)
+
     else:
-        st.error("Invalid email or password ❌")
+        user_doc = users_ref.document(email).get()
+        if not user_doc.exists:
+            error.markdown("<span style='color:#f87171;'>This email is not registered.</span>", unsafe_allow_html=True)
+        else:
+            user_data = user_doc.to_dict()
+            if user_data["password"] == password:
+                st.success("Successfully Logged In 🎉")
 
-# forgot password button
-if st.button("Forgot Password?"):
+                # store session for dashboard
+                st.session_state["logged_in"] = True
+                st.session_state["user"] = user_data
+
+                # redirect to next page (create later)
+                st.switch_page("pages/4_Dashboard.py")
+            else:
+                error.markdown("<span style='color:#f87171;'>Invalid Email or Password.</span>", unsafe_allow_html=True)
+
+st.write("")
+forgot = st.button("Forgot Password?")
+if forgot:
     st.switch_page("pages/3_Forgot_Password.py")
 
 st.write("")
-st.write("Don't have an account?")
-if st.button("Go to Register"):
+no_acc = st.button("Go to Register")
+if no_acc:
     st.switch_page("pages/1_Register.py")

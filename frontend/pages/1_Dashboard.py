@@ -1,6 +1,7 @@
 import streamlit as st
 import requests
 
+
 API_BASE = "http://localhost:5000/api"
 
 st.set_page_config(page_title="Dashboard", page_icon="📊", layout="wide")
