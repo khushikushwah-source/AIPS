@@ -1,9 +1,15 @@
 # frontend/streamlit_app.py
 import streamlit as st
-from pathlib import Path
-import importlib.util
-import sys
-import os
+#from pathlib import Path
+#import importlib.util
+#import sys
+#import os
+st.set_page_config(page_title="AIPS", page_icon="🤖", layout="wide")
+
+st.write("")  # keeps Streamlit happy
+
+st.switch_page("pages/0_Welcome.py")
+
 
 # -----------------------
 # Basic config & hide Streamlit chrome (optional)
@@ -23,7 +29,7 @@ st.markdown(
 # -----------------------
 # Load welcome module from pages/0_Welcome.py dynamically
 # -----------------------
-ROOT = Path(_file_).resolve().parent  # frontend/
+ROOT = Path(__file__).resolve().parent  # frontend/
 welcome_path = ROOT / "pages" / "0_Welcome.py"
 
 if not welcome_path.exists():
