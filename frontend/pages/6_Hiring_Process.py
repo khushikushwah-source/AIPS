@@ -193,4 +193,4 @@ st.markdown(
 )
 
 if next_clicked:
-    st.switch_page("pages/7_Test_Session.py")
+    st.switch_page("pages/7_Test_Page.py")
