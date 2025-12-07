@@ -1,0 +1,1569 @@
+{
+  "Infosys_Software Developer": [
+    {
+      "question": "What is the time complexity of binary search?",
+      "options": ["O(n)", "O(n log n)", "O(log n)", "O(1)"],
+      "answer": "O(log n)"
+    },
+    {
+      "question": "Which programming paradigm does Java follow?",
+      "options": ["Procedural", "Object-Oriented", "Functional", "None"],
+      "answer": "Object-Oriented"
+    },
+    {
+      "question": "Which keyword is used for inheritance in Java?",
+      "options": ["extends", "inherits", "super", "parent"],
+      "answer": "extends"
+    },
+    {
+      "question": "2D array in C is stored in which memory format?",
+      "options": ["Column-major", "Row-major", "Stack", "Heap"],
+      "answer": "Row-major"
+    },
+    {
+      "question": "Which data structure uses FIFO?",
+      "options": ["Stack", "Queue", "Graph", "Tree"],
+      "answer": "Queue"
+    },
+    {
+      "question": "Which sorting algorithm has O(n log n) best performance?",
+      "options": ["Bubble Sort", "Selection Sort", "Merge Sort", "Insertion Sort"],
+      "answer": "Merge Sort"
+    },
+    {
+      "question": "Which memory is faster?",
+      "options": ["Secondary Memory", "SSD", "Cache Memory", "RAM"],
+      "answer": "Cache Memory"
+    },
+    {
+      "question": "Full form of DSA?",
+      "options": ["Data Storage Algorithm", "Data Set Analysis", "Data Structures and Algorithms", "Data Sort Architecture"],
+      "answer": "Data Structures and Algorithms"
+    },
+    {
+      "question": "Which one is a NoSQL database?",
+      "options": ["MySQL", "PostgreSQL", "MongoDB", "Oracle"],
+      "answer": "MongoDB"
+    },
+    {
+      "question": "Which operator is used to access members of a pointer to a structure in C?",
+      "options": [".", "->", "::", ":"],
+      "answer": "->"
+    },
+    {
+      "question": "What is 25% of 880?",
+      "options": ["180", "200", "210", "220"],
+      "answer": "220"
+    },
+    {
+      "question": "Ratio 3:5 equivalent to?",
+      "options": ["6:12", "12:20", "15:35", "21:40"],
+      "answer": "12:20"
+    },
+    {
+      "question": "If A can do a piece of work in 20 days and B in 30 days, together they take?",
+      "options": ["10", "12", "15", "18"],
+      "answer": "12"
+    },
+    {
+      "question": "Train running at 60 km/hr crosses a pole in 9 sec. Length?",
+      "options": ["100 m", "120 m", "150 m", "180 m"],
+      "answer": "150 m"
+    },
+    {
+      "question": "Missing number: 2, 6, 18, 54, ___",
+      "options": ["216", "162", "108", "72"],
+      "answer": "162"
+    },
+    {
+      "question": "Find the odd one out: Pen, Paper, Pencil, Book",
+      "options": ["Pen", "Paper", "Pencil", "Book"],
+      "answer": "Book"
+    },
+    {
+      "question": "A is brother of B. B is sister of C. C is son of D. How is A related to D?",
+      "options": ["Son", "Daughter", "Brother", "Grandson"],
+      "answer": "Son"
+    },
+    {
+      "question": "Which of the following is NOT a preposition?",
+      "options": ["Within", "Before", "Around", "Beautiful"],
+      "answer": "Beautiful"
+    },
+    {
+      "question": "Choose the correct spelling:",
+      "options": ["Recieve", "Receive", "Receeve", "Reccive"],
+      "answer": "Receive"
+    },
+    {
+      "question": "Synonym of Rapid?",
+      "options": ["Slow", "Fast", "Lazy", "Weak"],
+      "answer": "Fast"
+    },
+    {
+      "question": "Antonym of Ancient?",
+      "options": ["Old", "New", "Historical", "Past"],
+      "answer": "New"
+    },
+    {
+      "question": "Choose the correct sentence:",
+      "options": ["He don't know", "He doesn't knows", "He doesn't know", "He don't knows"],
+      "answer": "He doesn't know"
+    },
+    {
+      "question": "What is the output of: print(len('Infosys'))",
+      "options": ["5", "6", "7", "8"],
+      "answer": "7"
+    },
+    {
+      "question": "HTTP stands for?",
+      "options": ["Hyper Text Transfer Protocol", "High Transfer Text Protocol", "Hyperlink Text Transmission Program", "None"],
+      "answer": "Hyper Text Transfer Protocol"
+    },
+    {
+      "question": "Which of the following is a cloud service provider?",
+      "options": ["AWS", "MS Excel", "Paint", "WinRAR"],
+      "answer": "AWS"
+    }
+  ]
+  ,
+"Infosys_Software Tester": [
+  {
+    "question": "Which type of testing verifies individual modules of code?",
+    "options": ["System Testing", "Unit Testing", "Integration Testing", "Alpha Testing"],
+    "answer": "Unit Testing"
+  },
+  {
+    "question": "Which testing checks data flow between modules?",
+    "options": ["Unit Testing", "Integration Testing", "Regression Testing", "Smoke Testing"],
+    "answer": "Integration Testing"
+  },
+  {
+    "question": "Which testing is performed without documentation?",
+    "options": ["Black Box Testing", "White Box Testing", "Ad-hoc Testing", "User Testing"],
+    "answer": "Ad-hoc Testing"
+  },
+  {
+    "question": "Which testing is done to check major functionality before deeper testing?",
+    "options": ["Ad-hoc", "Sanity", "Smoke", "Acceptance"],
+    "answer": "Smoke"
+  },
+  {
+    "question": "Which testing is done to check new code has not affected older features?",
+    "options": ["Functional", "Regression", "Unit", "Beta"],
+    "answer": "Regression"
+  },
+  {
+    "question": "Which tool is used for bug tracking?",
+    "options": ["Git", "Postman", "JIRA", "Docker"],
+    "answer": "JIRA"
+  },
+  {
+    "question": "Output of Boundary Value Analysis for range 1‑10?",
+    "options": ["1,5,10", "1,2,9", "0,1,10,11", "2,5,8"],
+    "answer": "0,1,10,11"
+  },
+  {
+    "question": "Which testing technique uses decision tables and state transition?",
+    "options": ["White Box", "Black Box", "Security", "Performance"],
+    "answer": "Black Box"
+  },
+  {
+    "question": "Alpha testing is done by?",
+    "options": ["End Users", "Developers", "Testers in Development Environment", "Clients"],
+    "answer": "Testers in Development Environment"
+  },
+  {
+    "question": "Beta testing is done by?",
+    "options": ["Developers", "End Users", "Automation Team", "System Engineers"],
+    "answer": "End Users"
+  },
+  {
+    "question": "Which performance testing checks system behavior on extreme load?",
+    "options": ["Volume", "Stress", "Spike", "Soak"],
+    "answer": "Stress"
+  },
+  {
+    "question": "Which testing validates UI of the product?",
+    "options": ["Functional", "Usability Testing", "System Testing", "Security Testing"],
+    "answer": "Usability Testing"
+  },
+  {
+    "question": "Which is NOT an Agile ceremony?",
+    "options": ["Sprint Planning", "Daily Stand‑up", "Retro Meeting", "Waterfall Meeting"],
+    "answer": "Waterfall Meeting"
+  },
+  {
+    "question": "STLC stands for?",
+    "options": [
+      "Software Testing Life Cycle",
+      "Structured Test Level Configuration",
+      "System Test Logical Cycle",
+      "Software Test Limit Condition"
+    ],
+    "answer": "Software Testing Life Cycle"
+  },
+  {
+    "question": "Which testing is performed at client side before launch?",
+    "options": ["System", "UAT", "Smoke", "White Box"],
+    "answer": "UAT"
+  },
+  {
+    "question": "Pick odd one out:",
+    "options": ["Selenium", "JMeter", "Appium", "Playwright"],
+    "answer": "JMeter"
+  },
+  {
+    "question": "Which tool automates API testing?",
+    "options": ["Postman", "VS Code", "Chrome", "Photoshop"],
+    "answer": "Postman"
+  },
+  {
+    "question": "What is the goal of load testing?",
+    "options": ["Break the system", "Measure system on expected usage", "UI validation", "Find SQL injections"],
+    "answer": "Measure system on expected usage"
+  },
+  {
+    "question": "Test case format does NOT include:",
+    "options": ["Test Step", "Expected Result", "Execution Time", "Test Data"],
+    "answer": "Execution Time"
+  },
+  {
+    "question": "Which database query finds records?",
+    "options": ["INSERT", "UPDATE", "SELECT", "DELETE"],
+    "answer": "SELECT"
+  },
+  {
+    "question": "Which HTTP status means NOT FOUND?",
+    "options": ["200", "301", "404", "500"],
+    "answer": "404"
+  },
+  {
+    "question": "Which is NOT a test level?",
+    "options": ["Unit", "System", "Integration", "Core Testing"],
+    "answer": "Core Testing"
+  },
+  {
+    "question": "Which SDLC model is fastest for changing requirements?",
+    "options": ["Waterfall", "Incremental", "V‑Model", "Agile"],
+    "answer": "Agile"
+  },
+  {
+    "question": "Testers mainly report bugs in which form?",
+    "options": ["Screenshots", "Video", "Bug Report", "Voice Message"],
+    "answer": "Bug Report"
+  },
+  {
+    "question": "Automation testing is suitable when?",
+    "options": ["Random testing", "Short term project", "Repetitive test cases", "Manual UI check"],
+    "answer": "Repetitive test cases"
+  }
+]
+,
+"Infosys_Data Analyst": [
+  {
+    "question": "Which SQL keyword is used to remove duplicate records?",
+    "options": ["DISTINCT", "UNIQUE", "DELETE", "FILTER"],
+    "answer": "DISTINCT"
+  },
+  {
+    "question": "Which function is used to calculate average in Excel?",
+    "options": ["MEAN()", "AVG()", "AVERAGE()", "AVE()"],
+    "answer": "AVERAGE()"
+  },
+  {
+    "question": "Which chart is best for showing trend over time?",
+    "options": ["Pie Chart", "Line Chart", "Bar Chart", "Doughnut Chart"],
+    "answer": "Line Chart"
+  },
+  {
+    "question": "Which join returns only matching rows between two tables?",
+    "options": ["LEFT JOIN", "RIGHT JOIN", "FULL JOIN", "INNER JOIN"],
+    "answer": "INNER JOIN"
+  },
+  {
+    "question": "Mean, Median, Mode belong to which concept?",
+    "options": ["Probability", "Statistics", "Data Mining", "Big Data"],
+    "answer": "Statistics"
+  },
+  {
+    "question": "Which Python library is used for data manipulation?",
+    "options": ["Pandas", "Matplotlib", "Numpy", "Seaborn"],
+    "answer": "Pandas"
+  },
+  {
+    "question": "What does CSV stand for?",
+    "options": ["Comma Separate Variable", "Comma Separated Values", "Column Storage Value", "Cell Structured View"],
+    "answer": "Comma Separated Values"
+  },
+  {
+    "question": "Which command is used to select all records from a table?",
+    "options": ["SELECT TABLE", "SELECT ALL", "SELECT *", "GET *"],
+    "answer": "SELECT *"
+  },
+  {
+    "question": "Scatter plot is useful for?",
+    "options": ["Distribution", "Relationship between variables", "Ranking", "Time-series"],
+    "answer": "Relationship between variables"
+  },
+  {
+    "question": "Which file format stores structured tables?",
+    "options": ["TXT", "XLS", "JPEG", "MP4"],
+    "answer": "XLS"
+  },
+  {
+    "question": "Which measure is resistant to extreme values (outliers)?",
+    "options": ["Mean", "Median", "Standard Deviation", "Range"],
+    "answer": "Median"
+  },
+  {
+    "question": "Which function in Excel counts numeric cells?",
+    "options": ["COUNT", "COUNTA", "COUNTIF", "COUNTNUM"],
+    "answer": "COUNT"
+  },
+  {
+    "question": "SQL command to sort data?",
+    "options": ["FILTER BY", "GROUP BY", "ORDER BY", "RANGE BY"],
+    "answer": "ORDER BY"
+  },
+  {
+    "question": "Which is NOT a data type in SQL?",
+    "options": ["INT", "BOOLEAN", "VARCHAR", "LETTER"],
+    "answer": "LETTER"
+  },
+  {
+    "question": "Python list indexing starts from?",
+    "options": ["0", "1", "-1", "Depends on version"],
+    "answer": "0"
+  },
+  {
+    "question": "What is the probability value range?",
+    "options": ["0 to 100", "0 to 1", "-1 to 1", "−∞ to +∞"],
+    "answer": "0 to 1"
+  },
+  {
+    "question": "Dashboard creation is done in?",
+    "options": ["JIRA", "MS Word", "Power BI", "VS Code"],
+    "answer": "Power BI"
+  },
+  {
+    "question": "Which command combines rows from two tables including non‑matching rows?",
+    "options": ["FULL JOIN", "INNER JOIN", "LEFT JOIN", "CROSS JOIN"],
+    "answer": "FULL JOIN"
+  },
+  {
+    "question": "Which function finds maximum from a list in Excel?",
+    "options": ["MAX()", "TOP()", "HIGH()", "BIG()"],
+    "answer": "MAX()"
+  },
+  {
+    "question": "Which test indicates correlation strength between variables?",
+       "options": ["Regression", "T‑test", "ANOVA", "Pearson"],
+    "answer": "Pearson"
+  },
+  {
+    "question": "Histogram is used for?",
+    "options": ["Distribution", "Trends", "Comparison", "Hierarchy"],
+    "answer": "Distribution"
+  },
+  {
+    "question": "Which one is a supervised machine learning algorithm?",
+    "options": ["K‑Means", "Decision Tree", "DBSCAN", "Apriori"],
+    "answer": "Decision Tree"
+  },
+  {
+    "question": "Primary key in a table must be?",
+    "options": ["Unique only", "Not null only", "Both unique and not null", "Nullable"],
+    "answer": "Both unique and not null"
+  },
+  {
+    "question": "Outliers mainly affect which metric?",
+    "options": ["Mean", "Median", "Mode", "Frequency"],
+    "answer": "Mean"
+  },
+  {
+    "question": "Which file format stores datasets for Python?",
+    "options": ["PNG", "CSV", "MP3", "APK"],
+    "answer": "CSV"
+  }
+]
+,
+"Infosys_Support Engineer": [
+  {
+    "question": "Which port is used for HTTP?",
+    "options": ["21", "25", "80", "110"],
+    "answer": "80"
+  },
+  {
+    "question": "Which command is used to check network connectivity?",
+    "options": ["ping", "path", "trace", "net"],
+    "answer": "ping"
+  },
+  {
+    "question": "Which layer of OSI handles routing?",
+    "options": ["Transport", "Network", "Application", "Datalink"],
+    "answer": "Network"
+  },
+  {
+    "question": "Which protocol is used for secure file transfer?",
+    "options": ["FTP", "HTTP", "SFTP", "POP3"],
+    "answer": "SFTP"
+  },
+  {
+    "question": "Which command shows IP configuration in Windows?",
+    "options": ["ifconfig", "ip", "ipconfig", "netconfig"],
+    "answer": "ipconfig"
+  },
+  {
+    "question": "Which device assigns IP automatically?",
+    "options": ["Switch", "Hub", "DHCP Server", "Firewall"],
+    "answer": "DHCP Server"
+  },
+  {
+    "question": "Blue screen error in Windows is related to?",
+    "options": ["Hardware fault", "Wallpaper issue", "Mouse error", "Printer driver"],
+    "answer": "Hardware fault"
+  },
+  {
+    "question": "What does DNS do?",
+    "options": ["Assign IP", "Convert domain name to IP", "Block malware", "Provide Wi‑Fi"],
+    "answer": "Convert domain name to IP"
+  },
+  {
+    "question": "Which tool is used for remote desktop support?",
+    "options": ["VS Code", "AnyDesk", "Canva", "Figma"],
+    "answer": "AnyDesk"
+  },
+  {
+    "question": "Which storage is fastest?",
+    "options": ["HDD", "SD Card", "SSD", "DVD"],
+    "answer": "SSD"
+  },
+  {
+    "question": "Ticketing tools include:",
+    "options": ["JIRA", "MS Word", "Chrome", "Zoom"],
+    "answer": "JIRA"
+  },
+  {
+    "question": "Which OS is Unix based?",
+    "options": ["Windows", "Linux", "Android", "FreeDOS"],
+    "answer": "Linux"
+  },
+  {
+    "question": "Which command deletes a directory in Windows?",
+    "options": ["dir", "cd", "rmdir", "md"],
+    "answer": "rmdir"
+  },
+  {
+    "question": "SMTP is used for?",
+    "options": ["Download emails", "Send emails", "Run websites", "Print files"],
+    "answer": "Send emails"
+  },
+  {
+    "question": "Which protocol works with IPsec for secure VPN?",
+    "options": ["PPTP", "L2TP", "FTP", "IMAP"],
+    "answer": "L2TP"
+  },
+  {
+    "question": "Customer escalation happens when?",
+    "options": ["Issue resolved fast", "Issue not resolved in first level", "User happy", "No ticket created"],
+    "answer": "Issue not resolved in first level"
+  },
+  {
+    "question": "Slow internet troubleshooting first step?",
+    "options": ["Replace router", "Restart system", "Check speed & ping", "Install Windows"],
+    "answer": "Check speed & ping"
+  },
+  {
+    "question": "Which firewall rule blocks unknown traffic?",
+    "options": ["Allow All", "Block All", "Allow by MAC", "Allow by TTL"],
+    "answer": "Block All"
+  },
+  {
+    "question": "Which memory is volatile?",
+    "options": ["HDD", "USB", "RAM", "DVD"],
+    "answer": "RAM"
+  },
+  {
+    "question": "Device drivers are required for?",
+    "options": ["Running applications", "Web browsing", "Hardware communication", "Playing music"],
+    "answer": "Hardware communication"
+  },
+  {
+    "question": "Which port is used for SSH?",
+    "options": ["21", "22", "80", "143"],
+    "answer": "22"
+  },
+  {
+    "question": "Which command is used for trace route in Windows?",
+    "options": ["traceroute", "tracepath", "tracert", "route"],
+    "answer": "tracert"
+  },
+  {
+    "question": "Which cable provides highest network speed?",
+    "options": ["Cat5", "Cat5e", "Cat6", "Coaxial"],
+    "answer": "Cat6"
+  },
+  {
+    "question": "What is the first step in troubleshooting?",
+    "options": ["Replace hardware", "Restart device", "Identify the problem", "Install drivers"],
+    "answer": "Identify the problem"
+  },
+  {
+    "question": "Which IP range is private?",
+    "options": ["8.8.8.8", "172.16.x.x", "54.233.x.x", "100.20.x.x"],
+    "answer": "172.16.x.x"
+  }
+]
+,
+"TCS_Software Developer": [
+  {
+    "question": "TCS NQT cognitive section mainly focuses on?",
+    "options": ["Coding only", "Aptitude + Reasoning + Verbal", "Networking", "DBMS only"],
+    "answer": "Aptitude + Reasoning + Verbal"
+  },
+  {
+    "question": "Which data structure follows LIFO?",
+    "options": ["Queue", "Stack", "Tree", "Graph"],
+    "answer": "Stack"
+  },
+  {
+    "question": "Which loop guarantees at least one execution?",
+    "options": ["for loop", "while loop", "do‑while loop", "foreach"],
+    "answer": "do‑while loop"
+  },
+  {
+    "question": "Which operator is used for comparison in C?",
+    "options": ["=", "==", "===", "!"],
+    "answer": "=="
+  },
+  {
+    "question": "Which searching algorithm is fastest for sorted data?",
+    "options": ["Linear search", "Binary search", "BFS", "DFS"],
+    "answer": "Binary search"
+  },
+  {
+    "question": "Which is NOT an OOP concept?",
+    "options": ["Inheritance", "Polymorphism", "Encapsulation", "Compilation"],
+    "answer": "Compilation"
+  },
+  {
+    "question": "Which SQL statement is used to change values?",
+    "options": ["SELECT", "UPDATE", "DELETE", "ALTER"],
+    "answer": "UPDATE"
+  },
+  {
+    "question": "What is the output of 6 % 4?",
+    "options": ["1", "2", "3", "6"],
+    "answer": "2"
+  },
+  {
+    "question": "Which data type stores true/false?",
+    "options": ["char", "boolean", "string", "float"],
+    "answer": "boolean"
+  },
+  {
+    "question": "Full form of DBMS?",
+    "options": [
+      "Database Management System",
+      "Data Basic Machine Setup",
+      "Digital Base Main Server",
+      "Database Machine Storage"
+    ],
+    "answer": "Database Management System"
+  },
+  {
+    "question": "What is malloc() used for?",
+    "options": ["File opening", "Memory allocation", "Thread creation", "String input"],
+    "answer": "Memory allocation"
+  },
+  {
+    "question": "Time complexity of Merge Sort?",
+    "options": ["O(n)", "O(log n)", "O(n log n)", "O(n²)"],
+    "answer": "O(n log n)"
+  },
+  {
+    "question": "What is 40% of 350?",
+    "options": ["120", "130", "140", "150"],
+    "answer": "140"
+  },
+  {
+    "question": "Ratio of 9:6 simplified?",
+    "options": ["3:2", "5:3", "4:3", "6:5"],
+    "answer": "3:2"
+  },
+  {
+    "question": "Pipe A fills a tank in 12 minutes and Pipe B in 18 minutes. Together time?",
+    "options": ["6 min", "7.2 min", "8 min", "9 min"],
+    "answer": "7.2 min"
+  },
+  {
+    "question": "Series: 4, 12, 36, 108, ___",
+    "options": ["432", "318", "244", "324"],
+    "answer": "324"
+  },
+  {
+    "question": "Odd one out:",
+    "options": ["Java", "Python", "C++", "HTML"],
+    "answer": "HTML"
+  },
+  {
+    "question": "Blood relation: A is father of B. B is mother of C. A is?",
+    "options": ["Father", "Uncle", "Grandfather", "Cousin"],
+    "answer": "Grandfather"
+  },
+  {
+    "question": "Choose the correct spelling:",
+    "options": ["Definately", "Definitely", "Definetely", "Definete"],
+    "answer": "Definitely"
+  },
+  {
+    "question": "Synonym of 'Transparent'?",
+    "options": ["Obvious", "Dirty", "Hidden", "Blocked"],
+    "answer": "Obvious"
+  },
+  {
+    "question": "Antonym of 'Strong'?",
+    "options": ["Force", "Weak", "Heavy", "Bold"],
+    "answer": "Weak"
+  },
+  {
+    "question": "Choose the correct sentence:",
+    "options": ["He didn’t went", "He didn't go", "He don't went", "He doesn't went"],
+    "answer": "He didn't go"
+  },
+  {
+    "question": "Python file extension?",
+    "options": [".jav", ".py", ".cs", ".cpp"],
+    "answer": ".py"
+  },
+  {
+    "question": "Git command to upload local files to remote repo?",
+    "options": ["git upload", "git push", "git save", "git commit"],
+    "answer": "git push"
+  },
+  {
+    "question": "HTTP status for success?",
+    "options": ["200", "401", "404", "500"],
+    "answer": "200"
+  }
+]
+,
+"TCS_Software Tester": [
+  {
+    "question": "Which testing verifies the complete system end‑to‑end?",
+    "options": ["Unit Testing", "System Testing", "Component Testing", "Smoke Testing"],
+    "answer": "System Testing"
+  },
+  {
+    "question": "Which is the first phase of STLC?",
+    "options": ["Test Planning", "Test Execution", "Requirement Analysis", "Test Design"],
+    "answer": "Requirement Analysis"
+  },
+  {
+    "question": "Which testing ensures that a build is stable?",
+    "options": ["Sanity Testing", "Smoke Testing", "Regression Testing", "Alpha Testing"],
+    "answer": "Smoke Testing"
+  },
+  {
+    "question": "Which field is NOT part of a bug report?",
+    "options": ["Bug ID", "Steps to Reproduce", "Expected Result", "Project Budget"],
+    "answer": "Project Budget"
+  },
+  {
+    "question": "Retesting is performed on?",
+    "options": ["Failed test cases", "Passed test cases", "New requirements", "Non‑functional defects"],
+    "answer": "Failed test cases"
+  },
+  {
+    "question": "Automation is most useful when?",
+    "options": ["UI changes frequently", "Project is short term", "Test cases are repeated", "Testing is random"],
+    "answer": "Test cases are repeated"
+  },
+  {
+    "question": "Which is NOT a Black Box technique?",
+    "options": ["Boundary Value Analysis", "Decision Table", "Equivalence Partitioning", "Statement Coverage"],
+    "answer": "Statement Coverage"
+  },
+  {
+    "question": "Which testing focuses on business requirements?",
+    "options": ["Functional", "Nonfunctional", "Stress", "Volume"],
+    "answer": "Functional"
+  },
+  {
+    "question": "Which testing checks minimum system requirements?",
+    "options": ["Compatibility Testing", "Installation Testing", "Performance Testing", "Configuration Testing"],
+    "answer": "Installation Testing"
+  },
+  {
+    "question": "Which tool is widely used for automation?",
+    "options": ["JIRA", "Selenium", "Postman", "ServiceNow"],
+    "answer": "Selenium"
+  },
+  {
+    "question": "Which test determines performance under expected usage?",
+    "options": ["Stress Testing", "Load Testing", "Spike Testing", "Soak Testing"],
+    "answer": "Load Testing"
+  },
+  {
+    "question": "Which SQL command removes records?",
+    "options": ["INSERT", "SELECT", "DELETE", "UPDATE"],
+    "answer": "DELETE"
+  },
+  {
+    "question": "Which HTTP status indicates UNAUTHORIZED?",
+    "options": ["200", "404", "401", "500"],
+    "answer": "401"
+  },
+  {
+    "question": "Which test checks the stability of the system for long duration?",
+    "options": ["Volume Testing", "Soak Testing", "Stress Testing", "Sanity Testing"],
+    "answer": "Soak Testing"
+  },
+  {
+    "question": "In Agile, one sprint generally lasts for?",
+    "options": ["1–4 weeks", "6–8 months", "3 hours", "1 day"],
+    "answer": "1–4 weeks"
+  },
+  {
+    "question": "The primary goal of UAT is?",
+    "options": ["Check code structure", "Check server performance", "Check user requirements", "Check automation scripts"],
+    "answer": "Check user requirements"
+  },
+  {
+    "question": "Which is a nonfunctional testing type?",
+    "options": ["Regression Testing", "Usability Testing", "Retesting", "Unit Testing"],
+    "answer": "Usability Testing"
+  },
+  {
+    "question": "Which type of testing is performed without documentation?",
+    "options": ["Exploratory Testing", "System Testing", "Performance Testing", "Security Testing"],
+    "answer": "Exploratory Testing"
+  },
+  {
+    "question": "Which SQL keyword filters rows?",
+    "options": ["WHERE", "ORDER BY", "GROUP", "UNIQUE"],
+    "answer": "WHERE"
+  },
+  {
+    "question": "What is the full form of SRS?",
+    "options": ["Software Report Summary", "Software Requirement Specification", "System Requirement Sector", "System Result Summary"],
+    "answer": "Software Requirement Specification"
+  },
+  {
+    "question": "Which testing checks compatibility across devices & browsers?",
+    "options": ["Performance Testing", "Compatibility Testing", "Security Testing", "Volume Testing"],
+    "answer": "Compatibility Testing"
+  },
+  {
+    "question": "Regression testing is performed after?",
+    "options": ["New build", "New UI changes", "Bug fixes", "All of the above"],
+    "answer": "All of the above"
+  },
+  {
+    "question": "Which is a severity level?",
+    "options": ["Critical", "Assigned", "Deferred", "Open"],
+    "answer": "Critical"
+  },
+  {
+    "question": "Test case execution result is marked as?",
+    "options": ["OK/Not OK", "Correct/Incorrect", "Pass/Fail", "Right/Wrong"],
+    "answer": "Pass/Fail"
+  },
+  {
+    "question": "Which environment mimics real usage?",
+    "options": ["Development", "QA", "Pre‑production", "Version Control"],
+    "answer": "Pre‑production"
+  }
+]
+,
+"TCS_Data Analyst": [
+  {
+    "question": "Which SQL clause is used to group rows?",
+    "options": ["WHERE", "GROUP BY", "ORDER BY", "MERGE"],
+    "answer": "GROUP BY"
+  },
+  {
+    "question": "Which Excel function counts non‑empty cells?",
+    "options": ["COUNT", "COUNTBLANK", "COUNTA", "COUNTEMPTY"],
+    "answer": "COUNTA"
+  },
+  {
+    "question": "Mean of 6, 9, 11, 14?",
+    "options": ["9.5", "10", "10.5", "8.5"],
+    "answer": "10"
+  },
+  {
+    "question": "Which chart shows proportion of categories?",
+    "options": ["Bar Chart", "Pie Chart", "Line Chart", "Histogram"],
+    "answer": "Pie Chart"
+  },
+  {
+    "question": "Python library for visualization?",
+    "options": ["Pandas", "Matplotlib", "Requests", "Numpy"],
+    "answer": "Matplotlib"
+  },
+  {
+    "question": "Which SQL keyword filters duplicate values?",
+    "options": ["UNIQUE", "DISTINCT", "FILTER", "CHECK"],
+    "answer": "DISTINCT"
+  },
+  {
+    "question": "Probability range lies between?",
+    "options": ["0 to 100", "0 to 1", "-∞ to +∞", "-1 to 1"],
+    "answer": "0 to 1"
+  },
+  {
+    "question": "Full form of ETL?",
+    "options": [
+      "Extract Transform Load",
+      "Edit Transfer Launch",
+      "Execute Test Log",
+      "Extract Transfer Layer"
+    ],
+    "answer": "Extract Transform Load"
+  },
+  {
+    "question": "Which SQL join returns all rows from left table?",
+    "options": ["LEFT JOIN", "RIGHT JOIN", "INNER JOIN", "CROSS JOIN"],
+    "answer": "LEFT JOIN"
+  },
+  {
+    "question": "Which Excel chart is best for time‑series?",
+    "options": ["Pie", "Area", "Line", "Radar"],
+    "answer": "Line"
+  },
+  {
+    "question": "Outliers mostly affect which measure?",
+    "options": ["Mean", "Median", "Mode", "All equally"],
+    "answer": "Mean"
+  },
+  {
+    "question": "Mode is defined as?",
+    "options": ["Middle value", "Most frequent value", "Sum of values", "Average value"],
+    "answer": "Most frequent value"
+  },
+  {
+    "question": "Which SQL statement deletes table structure and data?",
+    "options": ["DROP", "DELETE", "REMOVE", "CLEAR"],
+    "answer": "DROP"
+  },
+  {
+    "question": "Which Python function returns length of list?",
+    "options": ["count()", "size()", "length()", "len()"],
+    "answer": "len()"
+  },
+  {
+    "question": "Histogram displays?",
+    "options": ["Shape of distribution", "Percent relationships", "Ranking", "Difference comparison"],
+    "answer": "Shape of distribution"
+  },
+  {
+    "question": "Which Excel function finds largest value?",
+    "options": ["BIGGEST()", "MAX()", "HIGH()", "MAXVALUE()"],
+    "answer": "MAX()"
+  },
+  {
+    "question": "SQL to sort results?",
+    "options": ["WHERE", "GROUP BY", "SORT BY", "ORDER BY"],
+    "answer": "ORDER BY"
+  },
+  {
+    "question": "Which Python library is for numeric computing?",
+    "options": ["NumPy", "Pandas", "Flask", "Seaborn"],
+    "answer": "NumPy"
+  },
+  {
+    "question": "Which chart is best for comparison?",
+    "options": ["Bar Chart", "Pie Chart", "Radar Chart", "Scatter Plot"],
+    "answer": "Bar Chart"
+  },
+  {
+    "question": "Variance represents?",
+    "options": [
+      "Central tendency",
+      "Spread of data",
+      "Biggest value in dataset",
+      "Sample size"
+    ],
+    "answer": "Spread of data"
+  },
+  {
+    "question": "Excel file extension?",
+    "options": [".xls or .xlsx", ".exl", ".xlm", ".xlsdb"],
+    "answer": ".xls or .xlsx"
+  },
+  {
+    "question": "Correlation coefficient value near 0 indicates?",
+    "options": ["Strong relation", "Weak relation", "Inverse relation", "All equal"],
+    "answer": "Weak relation"
+  },
+  {
+    "question": "Query to get first 5 records?",
+    "options": [
+      "SELECT LIMIT 5",
+      "SELECT * TOP 5",
+      "SELECT * LIMIT 5",
+      "SELECT 5 ROWS"
+    ],
+    "answer": "SELECT * LIMIT 5"
+  },
+  {
+    "question": "Which BI tool is widely used?",
+    "options": ["Photoshop", "Power BI", "Chrome", "Excel 2003"],
+    "answer": "Power BI"
+  },
+  {
+    "question": "Primary key must be?",
+    "options": ["Nullable", "Unique only", "Not null only", "Unique & Not null"],
+    "answer": "Unique & Not null"
+  }
+]
+,
+"TCS_Support Engineer": [
+  {
+    "question": "Which command is used to check connectivity?",
+    "options": ["ping", "path", "cmd", "connect"],
+    "answer": "ping"
+  },
+  {
+    "question": "Which port is used for HTTPS?",
+    "options": ["20", "21", "80", "443"],
+    "answer": "443"
+  },
+  {
+    "question": "What does IP stand for?",
+       "options": ["Internet Provider", "Internet Protocol", "Internal Port", "Interface Pointer"],
+    "answer": "Internet Protocol"
+  },
+  {
+    "question": "Which device converts digital data to analog?",
+    "options": ["Modem", "Switch", "Hub", "Router"],
+    "answer": "Modem"
+  },
+  {
+    "question": "Which tool is used for remote support?",
+    "options": ["VS Code", "AnyDesk", "PPT", "Code Blocks"],
+    "answer": "AnyDesk"
+  },
+  {
+    "question": "Which layer handles encryption in OSI?",
+    "options": ["Transport", "Session", "Presentation", "Network"],
+    "answer": "Presentation"
+  },
+  {
+    "question": "Which command displays IP configuration in Linux?",
+    "options": ["ipconfig", "tracert", "ifconfig", "netshow"],
+    "answer": "ifconfig"
+  },
+  {
+    "question": "Which memory is volatile?",
+    "options": ["Hard Disk", "USB", "RAM", "DVD"],
+    "answer": "RAM"
+  },
+  {
+    "question": "DHCP mainly provides?",
+    "options": ["Username", "Automatic IP", "MAC filtering", "Server security"],
+    "answer": "Automatic IP"
+  },
+  {
+    "question": "Which port is used for FTP?",
+    "options": ["21", "25", "53", "443"],
+    "answer": "21"
+  },
+  {
+    "question": "Blue Screen error indicates?",
+    "options": ["Monitor issue", "Graphic card failure", "System crash / hardware failure", "Keyboard issue"],
+    "answer": "System crash / hardware failure"
+  },
+  {
+    "question": "Which storage is fastest?",
+    "options": ["HDD", "CD", "USB", "SSD"],
+    "answer": "SSD"
+  },
+  {
+    "question": "Which Windows command deletes folder?",
+    "options": ["del folder", "rmdir", "mkdir", "close"],
+    "answer": "rmdir"
+  },
+  {
+    "question": "Which protocol is used to send emails?",
+    "options": ["POP3", "IMAP", "SMTP", "FTP"],
+    "answer": "SMTP"
+  },
+  {
+    "question": "Which of the following assigns IP based on MAC?",
+    "options": ["DNS", "DHCP", "Proxy", "Firewall"],
+    "answer": "DHCP"
+  },
+  {
+    "question": "Customer escalation occurs when?",
+    "options": ["Resolved in first attempt", "Delayed / unresolved issue", "Issue too small", "Wrong password"],
+    "answer": "Delayed / unresolved issue"
+  },
+  {
+    "question": "Forgot password troubleshooting first step?",
+    "options": ["Reset system", "Reinstall software", "Verify identity", "Clear cache"],
+    "answer": "Verify identity"
+  },
+  {
+    "question": "Which port is used for SSH?",
+    "options": ["20", "22", "80", "110"],
+    "answer": "22"
+  },
+  {
+    "question": "Trace route command in Windows?",
+    "options": ["traceroute", "tracepath", "tracert", "tracecmd"],
+    "answer": "tracert"
+  },
+  {
+    "question": "Which cable gives highest network speed?",
+    "options": ["Cat5", "Cat5e", "Cat6", "Coaxial"],
+    "answer": "Cat6"
+  },
+  {
+    "question": "First step in troubleshooting?",
+    "options": ["Replace device", "Identify the problem", "Escalate", "Collect payment"],
+    "answer": "Identify the problem"
+  },
+  {
+    "question": "Which IP range is private?",
+    "options": ["192.168.x.x", "8.8.8.8", "172.233.x.x", "54.201.x.x"],
+    "answer": "192.168.x.x"
+  },
+  {
+    "question": "Which ticket priority is highest?",
+    "options": ["Low", "Medium", "High", "Critical"],
+    "answer": "Critical"
+  },
+  {
+    "question": "Purpose of firewall?",
+    "options": ["Increase internet speed", "Block unauthorized access", "Install windows", "Fix printer"],
+    "answer": "Block unauthorized access"
+  },
+  {
+    "question": "Which is NOT an input device?",
+    "options": ["Keyboard", "Printer", "Mouse", "Scanner"],
+    "answer": "Printer"
+  }
+]
+,
+"Wipro_Software Developer": [
+  {
+    "question": "Which of the following is NOT an OOP concept?",
+    "options": ["Abstraction", "Inheritance", "Polymorphism", "Compilation"],
+    "answer": "Compilation"
+  },
+  {
+    "question": "Which sorting algorithm works on divide and conquer?",
+    "options": ["Bubble Sort", "Merge Sort", "Selection Sort", "Insertion Sort"],
+    "answer": "Merge Sort"
+  },
+  {
+    "question": "Which language is platform independent?",
+    "options": ["C", "C++", "Java", "Assembly"],
+    "answer": "Java"
+  },
+  {
+    "question": "Which memory stores local variables?",
+    "options": ["Heap", "Stack", "ROM", "Register"],
+    "answer": "Stack"
+  },
+  {
+    "question": "Which operator is used to allocate memory dynamically in C?",
+    "options": ["new", "malloc", "alloc", "build"],
+    "answer": "malloc"
+  },
+  {
+    "question": "Which database command modifies table values?",
+    "options": ["ALTER", "DELETE", "UPDATE", "RENAME"],
+    "answer": "UPDATE"
+  },
+  {
+    "question": "What is the binary equivalent of 13?",
+    "options": ["1011", "1101", "1110", "1001"],
+    "answer": "1101"
+  },
+  {
+    "question": "Which data structure uses FIFO?",
+    "options": ["Tree", "Queue", "Stack", "Graph"],
+    "answer": "Queue"
+  },
+  {
+    "question": "Which protocol is used to secure websites?",
+    "options": ["FTP", "HTTP", "SMTP", "HTTPS"],
+    "answer": "HTTPS"
+  },
+  {
+    "question": "Which keyword prevents inheritance in Java?",
+    "options": ["final", "static", "extends", "sealed"],
+    "answer": "final"
+  },
+  {
+    "question": "Value of 18% of 750?",
+    "options": ["125", "130", "135", "145"],
+    "answer": "135"
+  },
+  {
+    "question": "Simplify ratio: 24 : 36",
+    "options": ["2 : 3", "3 : 4", "4 : 5", "5 : 6"],
+    "answer": "2 : 3"
+  },
+  {
+    "question": "Boat travels 60 km downstream in 3 hours. Speed of boat if stream = 5 km/h?",
+    "options": ["10 km/h", "12 km/h", "15 km/h", "20 km/h"],
+    "answer": "15 km/h"
+  },
+  {
+    "question": "Series: 5, 10, 20, 40, ___",
+    "options": ["80", "85", "75", "90"],
+    "answer": "80"
+  },
+  {
+    "question": "Odd one out:",
+    "options": ["Java", "Python", "C#", "Windows"],
+    "answer": "Windows"
+  },
+  {
+    "question": "Blood relation: A is the mother of B. C is the father of A. C is?",
+    "options": ["Uncle", "Grandfather", "Cousin", "Brother‑in‑law"],
+    "answer": "Grandfather"
+  },
+  {
+    "question": "Correct spelling:",
+    "options": ["Maneger", "Manager", "Managar", "Managger"],
+    "answer": "Manager"
+  },
+  {
+    "question": "Choose the correct sentence:",
+    "options": ["She don’t like music", "She doesn't like music", "She doesn't likes music", "She don’t likes music"],
+    "answer": "She doesn't like music"
+  },
+  {
+    "question": "Output of: len('Wipro')",
+    "options": ["4", "5", "6", "7"],
+    "answer": "5"
+  },
+  {
+    "question": "SQL keyword for filtering?",
+    "options": ["ORDER BY", "GROUP BY", "WHERE", "SELECT"],
+    "answer": "WHERE"
+  },
+  {
+    "question": "Which is NOT a version control tool?",
+    "options": ["Git", "SVN", "Mercurial", "Excel"],
+    "answer": "Excel"
+  },
+  {
+    "question": "HTTP status for Client Error?",
+    "options": ["200", "301", "400‑499", "500‑599"],
+    "answer": "400‑499"
+  },
+  {
+    "question": "Python uses which keyword for functions?",
+    "options": ["func", "def", "function", "method"],
+    "answer": "def"
+  },
+  {
+    "question": "Which one is a cloud provider?",
+    "options": ["AWS", "MS Word", "VirtualBox", "PowerPoint"],
+    "answer": "AWS"
+  },
+  {
+    "question": "Which approach improves code readability?",
+    "options": ["Code duplication", "Magic numbers", "Clean coding", "Long nested loops"],
+    "answer": "Clean coding"
+  }
+]
+,
+"Wipro_Software Tester": [
+  {
+    "question": "Which testing is done without documentation?",
+    "options": ["System Testing", "Ad‑hoc Testing", "Performance Testing", "White Box Testing"],
+    "answer": "Ad‑hoc Testing"
+  },
+  {
+    "question": "Which phase of STLC includes writing test scenarios and cases?",
+    "options": ["Test Planning", "Requirement Analysis", "Test Design", "Test Closure"],
+    "answer": "Test Design"
+  },
+  {
+    "question": "Which testing ensures unchanged modules are not affected after fixes?",
+    "options": ["Regression Testing", "Retesting", "Pilot Testing", "Alpha Testing"],
+    "answer": "Regression Testing"
+  },
+  {
+    "question": "Which is a functional testing type?",
+    "options": ["User Interface", "Stress", "Soak", "Volume"],
+    "answer": "User Interface"
+  },
+  {
+    "question": "Smoke testing is performed to check?",
+    "options": ["Build stability", "Server speed", "Security issues", "Memory usage"],
+    "answer": "Build stability"
+  },
+  {
+    "question": "Which tool is most used for automation?",
+    "options": ["Selenium", "Tableau", "Postman", "Power BI"],
+    "answer": "Selenium"
+  },
+  {
+    "question": "Correct order of Bug Life Cycle?",
+    "options": [
+      "New → Assigned → Fixed → Retest → Closed",
+      "New → Closed → Fixed → Retest → Assigned",
+      "New → Fixed → Assigned → Retest → Closed",
+      "Assigned → New → Retest → Closed → Fixed"
+    ],
+    "answer": "New → Assigned → Fixed → Retest → Closed"
+  },
+  {
+    "question": "Which testing is done for new minor changes in build?",
+    "options": ["Sanity Testing", "UAT", "System Testing", "Volume Testing"],
+    "answer": "Sanity Testing"
+  },
+  {
+    "question": "Which SQL statement fetches unique values?",
+    "options": ["SELECT", "SELECT DISTINCT", "SELECT UNIQUE", "SELECT ONLY"],
+    "answer": "SELECT DISTINCT"
+  },
+  {
+    "question": "Boundary value analysis for range 1–20?",
+    "options": ["1, 20", "0, 1, 20, 21", "5, 10, 15", "2, 4, 19"],
+    "answer": "0, 1, 20, 21"
+  },
+  {
+    "question": "Which testing checks application on different platforms?",
+    "options": ["Compatibility Testing", "Performance Testing", "Pilot Testing", "Stress Testing"],
+    "answer": "Compatibility Testing"
+  },
+  {
+    "question": "Primary purpose of test closure report?",
+    "options": ["Start development", "Document completion of testing", "Close client ticket", "Start automation"],
+    "answer": "Document completion of testing"
+  },
+  {
+    "question": "Which field is mandatory in bug report?",
+    "options": ["Bug ID", "User rating", "Browser theme", "Network speed"],
+    "answer": "Bug ID"
+  },
+  {
+    "question": "Which Agile meeting reviews team performance?",
+    "options": ["Sprint Planning", "Daily Scrum", "Sprint Retrospective", "Demo Meeting"],
+    "answer": "Sprint Retrospective"
+  },
+  {
+    "question": "Which testing verifies software installation & uninstallation?",
+    "options": ["Recovery Testing", "Installation Testing", "Migration Testing", "Validation Testing"],
+    "answer": "Installation Testing"
+  },
+  {
+    "question": "Which HTTP code means internal server error?",
+    "options": ["200", "302", "401", "500"],
+    "answer": "500"
+  },
+  {
+    "question": "Postman is used for?",
+    "options": ["API Testing", "UI Mockup", "Database Backup", "Load Testing"],
+    "answer": "API Testing"
+  },
+  {
+    "question": "Main use of JIRA?",
+    "options": ["Automation", "Database creation", "Bug tracking / Ticket management", "Website hosting"],
+    "answer": "Bug tracking / Ticket management"
+  },
+  {
+    "question": "In UAT, testing is performed by?",
+    "options": ["Developers", "End Users/Clients", "Security Team", "Automation Engineers"],
+    "answer": "End Users/Clients"
+  },
+  {
+    "question": "Which is a non‑functional testing type?",
+    "options": ["API Testing", "Unit Testing", "Usability Testing", "Retesting"],
+    "answer": "Usability Testing"
+  },
+  {
+    "question": "Which document contains expected output?",
+    "options": ["SRS", "Test Plan", "Test Case", "Project Proposal"],
+    "answer": "Test Case"
+  },
+  {
+    "question": "Regression testing occurs after?",
+    "options": ["Build stable", "Bug fixes / Enhancements", "Deployment", "Client approval"],
+    "answer": "Bug fixes / Enhancements"
+  },
+  {
+    "question": "What is the aim of performance testing?",
+    "options": ["Find UI bugs", "Check speed & stability", "Verify security", "Test grammar"],
+    "answer": "Check speed & stability"
+  },
+  {
+    "question": "Which level verifies complete business workflow?",
+    "options": ["Unit", "Integration", "System", "Smoke"],
+    "answer": "System"
+  },
+  {
+    "question": "Which type of testing ensures system does not break under heavy load?",
+    "options": ["Stress Testing", "Sanity Testing", "Installation Testing", "Compatibility Testing"],
+    "answer": "Stress Testing"
+  }
+]
+,
+"Wipro_Data Analyst": [
+  {
+    "question": "Which SQL function gives total number of rows?",
+    "options": ["SUM()", "AVG()", "COUNT()", "SIZE()"],
+    "answer": "COUNT()"
+  },
+  {
+    "question": "Which chart is best to represent comparison between categories?",
+    "options": ["Pie Chart", "Bar Chart", "Area Chart", "Scatter Plot"],
+    "answer": "Bar Chart"
+  },
+  {
+    "question": "Standard deviation measures?",
+    "options": ["Center of data", "Spread of data", "Sample size", "Sum of data"],
+    "answer": "Spread of data"
+  },
+  {
+    "question": "Which Python library is used for data manipulation?",
+    "options": ["Numpy", "Pandas", "Seaborn", "Matplotlib"],
+    "answer": "Pandas"
+  },
+  {
+    "question": "SQL command to delete table values but keep structure?",
+    "options": ["DROP", "DELETE", "REMOVE", "ERASE"],
+    "answer": "DELETE"
+  },
+  {
+    "question": "Which Excel function counts numeric values only?",
+    "options": ["COUNT", "COUNTA", "COUNTIF", "COUNTBLANK"],
+    "answer": "COUNT"
+  },
+  {
+    "question": "The mean of dataset changes most because of?",
+    "options": ["Normal values", "Duplicate values", "Outliers", "Low values"],
+    "answer": "Outliers"
+  },
+  {
+    "question": "Which SQL keyword filters groups?",
+    "options": ["WHERE", "HAVING", "GROUP", "FILTER"],
+    "answer": "HAVING"
+  },
+  {
+    "question": "Which Excel tool is used for data summary?",
+    "options": ["Pivot Table", "Grid Table", "Value Extractor", "Smart Summary"],
+    "answer": "Pivot Table"
+  },
+  {
+    "question": "Which visualization is best for correlation?",
+    "options": ["Line Chart", "Scatter Plot", "Pie Chart", "Waterfall Chart"],
+    "answer": "Scatter Plot"
+  },
+  {
+    "question": "What does CSV stand for?",
+    "options": ["Comma Separated Values", "Column Storage Values", "Character Split View", "Cell Standard Value"],
+    "answer": "Comma Separated Values"
+  },
+  {
+    "question": "Which function finds maximum value?",
+    "options": ["MAX()", "HIGH()", "TOP()", "BIG()"],
+    "answer": "MAX()"
+  },
+  {
+    "question": "Probability cannot be?",
+    "options": ["0.3", "1.0", "−0.2", "0"],
+    "answer": "−0.2"
+  },
+  {
+    "question": "SQL JOIN that returns matched rows only?",
+    "options": ["LEFT JOIN", "RIGHT JOIN", "FULL JOIN", "INNER JOIN"],
+    "answer": "INNER JOIN"
+  },
+  {
+    "question": "Python indexing starts from?",
+    "options": ["0", "1", "-1", "Depends on OS"],
+    "answer": "0"
+  },
+  {
+    "question": "Which visualization tool is popular?",
+    "options": ["JIRA", "Firebase", "Power BI", "VirtualBox"],
+    "answer": "Power BI"
+  },
+  {
+    "question": "SQL query to return only first 10 rows?",
+    "options": ["SELECT LIMIT 10", "SELECT * FIRST 10", "SELECT TOP 10", "FETCH 10"],
+    "answer": "SELECT LIMIT 10"
+  },
+  {
+    "question": "Histogram is used to display?",
+    "options": ["Trend", "Distribution", "Ranking", "Sales forecast"],
+    "answer": "Distribution"
+  },
+  {
+    "question": "Which file format can store data tables?",
+    "options": ["PNG", "XLSX", "MP4", "JPG"],
+    "answer": "XLSX"
+  },
+  {
+    "question": "Correlation coefficient range?",
+    "options": ["0 to 1", "−1 to +1", "1 to 100", "0 to 1000"],
+    "answer": "−1 to +1"
+  },
+  {
+    "question": "SQL wildcard operator?",
+    "options": ["$", "#", "%", "&"],
+    "answer": "%"
+  },
+  {
+    "question": "Which chart is best for percentage distribution?",
+    "options": ["Bar", "Pie", "Line", "Scatter"],
+    "answer": "Pie"
+  },
+  {
+    "question": "Primary key must be?",
+    "options": ["Only unique", "Only not null", "Unique and Not null", "Nullable"],
+    "answer": "Unique and Not null"
+  },
+  {
+    "question": "Which Excel function returns the total?",
+    "options": ["ADD()", "SUM()", "TOTAL()", "COUNT()"],
+    "answer": "SUM()"
+  },
+  {
+    "question": "Best language for data analysis?",
+    "options": ["Python", "HTML", "CSS", "C#"],
+    "answer": "Python"
+  }
+]
+,
+"Wipro_Support Engineer": [
+  {
+    "question": "Which command is used to test network connectivity?",
+    "options": ["ping", "ipconfig", "tracert", "nslookup"],
+    "answer": "ping"
+  },
+  {
+    "question": "Which port is used for HTTP?",
+    "options": ["21", "80", "22", "443"],
+    "answer": "80"
+  },
+  {
+    "question": "Which layer is responsible for routing in OSI model?",
+    "options": ["Network", "Transport", "Session", "Application"],
+    "answer": "Network"
+  },
+  {
+    "question": "Which device assigns IP address automatically?",
+    "options": ["Router", "Hub", "Switch", "DHCP Server"],
+    "answer": "DHCP Server"
+  },
+  {
+    "question": "Blue screen error in Windows is caused due to?",
+    "options": ["Mouse failure", "Wallpaper issue", "Hardware/System crash", "Password incorrect"],
+   
+    "answer": "Hardware/System crash"
+  },
+  {
+    "question": "Which tool is used for remote troubleshooting?",
+    "options": ["AnyDesk", "Figma", "MS Word", "PowerPoint"],
+    "answer": "AnyDesk"
+  },
+  {
+    "question": "Which command displays network configuration in Windows?",
+    "options": ["ifconfig", "ip", "ipconfig", "route"],
+    "answer": "ipconfig"
+  },
+  {
+    "question": "Which storage is the fastest?",
+    "options": ["HDD", "DVD", "SSD", "USB 2.0"],
+    "answer": "SSD"
+  },
+  {
+    "question": "SMTP protocol is used for?",
+    "options": ["Receiving emails", "Sending emails", "File transfer", "Web hosting"],
+    "answer": "Sending emails"
+  },
+  {
+    "question": "Which port is used for SSH?",
+    "options": ["80", "22", "110", "53"],
+    "answer": "22"
+  },
+  {
+    "question": "Which command tracks packet route?",
+    "options": ["pathping", "routepath", "tracert", "tracecmd"],
+    "answer": "tracert"
+  },
+  {
+    "question": "Which cable provides highest data transmission speed?",
+    "options": ["Cat5", "Cat5e", "Cat6", "Coaxial"],
+    "answer": "Cat6"
+  },
+  {
+    "question": "In troubleshooting, first step is?",
+    "options": ["Replace PC", "Identify the problem", "Format the system", "Check invoice"],
+    "answer": "Identify the problem"
+  },
+  {
+    "question": "Which IP range is private?",
+    "options": ["192.168.x.x", "8.8.8.8", "54.233.x.x", "13.107.x.x"],
+    "answer": "192.168.x.x"
+  },
+  {
+    "question": "Ticket priority highest level?",
+    "options": ["Medium", "Critical", "Low", "Normal"],
+    "answer": "Critical"
+  },
+  {
+    "question": "Purpose of firewall?",
+    "options": ["Increase Wi‑Fi range", "Block unauthorized access", "Fix RAM issues", "Enhance graphics"],
+    "answer": "Block unauthorized access"
+  },
+  {
+    "question": "Which one is NOT an input device?",
+    "options": ["Keyboard", "Mouse", "Printer", "Scanner"],
+    "answer": "Printer"
+  },
+  {
+    "question": "Which command deletes a folder in Windows?",
+    "options": ["removefolder", "delfile", "rmdir", "deletefolder"],
+    "answer": "rmdir"
+  },
+  {
+    "question": "MacBook OS is based on?",
+    "options": ["Linux", "MS‑DOS", "Windows NT", "Unix"],
+    "answer": "Unix"
+  },
+  {
+    "question": "Forgot password issue first step?",
+    "options": ["Reinstall Windows", "Verify user identity", "Upgrade RAM", "Delete account"],
+    "answer": "Verify user identity"
+  },
+  {
+    "question": "Slow internet troubleshooting first step?",
+    "options": ["Restart router immediately", "Test speed & ping", "Change DNS first", "Replace LAN cable"],
+    "answer": "Test speed & ping"
+  },
+  {
+    "question": "Which record keeps device info in Windows?",
+    "options": ["Device Manager", "Control Panel", "BIOS", "CMD"],
+    "answer": "Device Manager"
+  },
+  {
+    "question": "User escalation happens when?",
+    "options": ["Issue unresolved for long time", "Issue solved quickly", "Network fast", "Password working"],
+    "answer": "Issue unresolved for long time"
+  },
+  {
+    "question": "Which Windows tool displays application crash logs?",
+    "options": ["Event Viewer", "Device Manager", "Snipping Tool", "Paint"],
+    "answer": "Event Viewer"
+  },
+  {
+    "question": "Which backup type stores full system image?",
+    "options": ["Incremental", "Differential", "System Image Backup", "Patch Backup"],
+    "answer": "System Image Backup"
+  }
+]
+
+}

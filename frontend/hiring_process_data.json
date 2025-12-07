@@ -1,0 +1,964 @@
+{
+  "TCS_Software Developer": [
+    {
+      "id": "s1",
+      "title": "Online Aptitude Test",
+      "time": "45–60 min",
+      "sections": [
+        {
+          "name": "Quantitative Aptitude",
+          "topics": [
+            "Percentages & Ratios",
+            "Profit & Loss, SI & CI",
+            "Time, Speed & Distance",
+            "Time & Work"
+          ]
+        },
+        {
+          "name": "Logical Reasoning",
+          "topics": [
+            "Series & Patterns",
+            "Seating Arrangement",
+            "Puzzles",
+            "Data Sufficiency (basic)"
+          ]
+        },
+        {
+          "name": "Verbal Ability",
+          "topics": [
+            "Reading Comprehension",
+            "Error Spotting",
+            "Sentence Correction",
+            "Vocabulary (Synonyms/Antonyms)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Technical MCQ Round",
+      "time": "30–40 min",
+      "sections": [
+        {
+          "name": "Programming Basics",
+          "topics": [
+            "C / C++ / Java fundamentals",
+            "Loops, Arrays, Functions",
+            "Pointers / References (basic)"
+          ]
+        },
+        {
+          "name": "OOPS & DBMS",
+          "topics": [
+            "OOPS concepts (Inheritance, Polymorphism)",
+            "DBMS basics (SQL, Joins)",
+            "Normalization basics"
+          ]
+        },
+        {
+          "name": "CS Fundamentals",
+          "topics": [
+            "Operating System basics",
+            "Computer Networks basics",
+            "SDLC overview"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "Technical Interview",
+      "time": "30–45 min",
+      "sections": [
+        {
+          "name": "Project & DSA",
+          "topics": [
+            "Final year / major project discussion",
+            "Array / String coding questions",
+            "Basic DSA (Stack, Queue, Linked List)"
+          ]
+        },
+        {
+          "name": "Core CS Concepts",
+          "topics": [
+            "OOPS deep dive",
+            "Database design + queries",
+            "Basic system design discussion"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "HR Interview",
+      "time": "20–30 min",
+      "sections": [
+        {
+          "name": "HR Discussion",
+          "topics": [
+            "Self introduction & background",
+            "Strengths & weaknesses",
+            "Why TCS? & relocation",
+            "Salary, joining & bond discussion"
+          ]
+        }
+      ]
+    }
+  ],
+
+  "TCS_Software Tester": [
+    {
+      "id": "s1",
+      "title": "Online Aptitude Test",
+      "time": "40–50 min",
+      "sections": [
+        {
+          "name": "Quantitative",
+          "topics": [
+            "Percentages & Ratios",
+            "Data Interpretation (tables, graphs)",
+            "Time & Work"
+          ]
+        },
+        {
+          "name": "Logical Reasoning",
+          "topics": [
+            "Puzzles",
+            "Seating Arrangement",
+            "Syllogisms"
+          ]
+        },
+        {
+          "name": "Verbal",
+          "topics": [
+            "Reading Comprehension",
+            "Grammar & Error detection"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Testing & QA MCQ",
+      "time": "30–40 min",
+      "sections": [
+        {
+          "name": "Software Testing Basics",
+          "topics": [
+            "SDLC & STLC",
+            "Functional vs Non-functional testing",
+            "Test case & Bug life cycle"
+          ]
+        },
+        {
+          "name": "Manual Testing Concepts",
+          "topics": [
+            "Boundary value analysis",
+            "Equivalence partitioning",
+            "Smoke & Regression testing"
+          ]
+        },
+        {
+          "name": "Basic Automation",
+          "topics": [
+            "Selenium basics (concept level)",
+            "Test frameworks overview"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "Technical Interview",
+      "time": "30–40 min",
+      "sections": [
+        {
+          "name": "Testing Scenario Discussion",
+          "topics": [
+            "Write test cases for real life scenarios",
+            "How to report a bug",
+            "Prioritization & severity"
+          ]
+        },
+        {
+          "name": "Basic SQL & API Testing",
+          "topics": [
+            "Simple SQL queries",
+            "Basic API testing concepts"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "HR Interview",
+      "time": "20–30 min",
+      "sections": [
+        {
+          "name": "HR Discussion",
+          "topics": [
+            "Career goals",
+            "Client communication ability",
+            "Shift flexibility"
+          ]
+        }
+      ]
+    }
+  ],
+
+  "TCS_Data Analyst": [
+    {
+      "id": "s1",
+      "title": "Aptitude & Analytics Test",
+      "time": "45–60 min",
+      "sections": [
+        {
+          "name": "Quantitative & DI",
+          "topics": [
+            "Percentages & Profit/Loss",
+            "Data Interpretation (charts, tables)",
+            "Ratios & Averages"
+          ]
+        },
+        {
+          "name": "Logical Reasoning",
+          "topics": [
+            "Puzzles",
+            "Data Sufficiency",
+            "Patterns & Series"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Analytics & Tools MCQ",
+      "time": "30–40 min",
+      "sections": [
+        {
+          "name": "Excel & Spreadsheets",
+          "topics": [
+            "VLOOKUP / HLOOKUP (concept)",
+            "Pivot tables basics",
+            "Data cleaning"
+          ]
+        },
+        {
+          "name": "SQL Basics",
+          "topics": [
+            "SELECT, WHERE, ORDER BY",
+            "JOINS (INNER, LEFT basic)",
+            "GROUP BY & aggregate functions"
+          ]
+        },
+        {
+          "name": "Visualization Basics",
+          "topics": [
+            "Charts & dashboards concepts",
+            "Basic Power BI / Tableau awareness"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "Technical Interview",
+      "time": "30–45 min",
+      "sections": [
+        {
+          "name": "Use Case & Problem Solving",
+          "topics": [
+            "Real data analysis scenario discussion",
+            "How to approach messy data",
+            "Metrics & KPIs understanding"
+          ]
+        },
+        {
+          "name": "SQL & Excel Questions",
+          "topics": [
+            "Write simple queries",
+            "Explain formulas used in analysis"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "HR Interview",
+      "time": "20–25 min",
+      "sections": [
+        {
+          "name": "HR & Client Fit",
+          "topics": [
+            "Communication skills",
+            "Stakeholder handling",
+            "Career interests in analytics"
+          ]
+        }
+      ]
+    }
+  ],
+
+  "TCS_Support Engineer": [
+    {
+      "id": "s1",
+      "title": "Aptitude & Communication Test",
+      "time": "40–50 min",
+      "sections": [
+        {
+          "name": "Basic Aptitude",
+          "topics": [
+            "Numbers & Percentages",
+            "Logical puzzles (easy)",
+            "Observation based questions"
+          ]
+        },
+        {
+          "name": "English & Communication",
+          "topics": [
+            "Email writing (basics)",
+            "Grammar & sentence formation",
+            "Listening comprehension (optional)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Technical & Support MCQ",
+      "time": "30–35 min",
+      "sections": [
+        {
+          "name": "Computer Fundamentals",
+          "topics": [
+            "OS basics (Windows / Linux)",
+            "Networking basics (IP, DNS, HTTP)",
+            "Hardware & troubleshooting basics"
+          ]
+        },
+        {
+          "name": "Support Scenarios",
+          "topics": [
+            "Ticketing tools overview",
+            "L1 support responsibilities",
+            "Basic incident & problem management"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "Technical + Client Round",
+      "time": "25–35 min",
+      "sections": [
+        {
+          "name": "Scenario Based Questions",
+          "topics": [
+            "Handle angry customer",
+            "Steps to troubleshoot issue",
+            "Proper escalation"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "HR Interview",
+      "time": "20–25 min",
+      "sections": [
+        {
+          "name": "HR",
+          "topics": [
+            "Shift flexibility",
+            "Night shift / weekend support",
+            "Stability & long term interest"
+          ]
+        }
+      ]
+    }
+  ],
+
+  "Infosys_Software Developer": [
+    {
+      "id": "s1",
+      "title": "Online Test (Aptitude + Logical + Verbal)",
+      "time": "60 min",
+      "sections": [
+        {
+          "name": "Quantitative",
+          "topics": [
+            "Number system & divisibility",
+            "Algebra (simple equations)",
+            "Time, Work & Distance"
+          ]
+        },
+        {
+          "name": "Logical Reasoning",
+          "topics": [
+            "Arrangements",
+            "Puzzles & seating",
+            "Data sufficiency"
+          ]
+        },
+        {
+          "name": "Verbal",
+          "topics": [
+            "Reading comprehension",
+            "Fill in the blanks",
+            "Para jumbles"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Technical Ability / Coding Test",
+      "time": "40–60 min",
+      "sections": [
+        {
+          "name": "Coding",
+          "topics": [
+            "Basic coding problem (array/string)",
+            "Loops & conditions",
+            "Functions & recursion (basic)"
+          ]
+        },
+        {
+          "name": "Language Fundamentals",
+          "topics": [
+            "Java / Python basics",
+            "OOPS concepts brief"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "Technical Interview",
+      "time": "30–45 min",
+      "sections": [
+        {
+          "name": "Projects & DSA",
+          "topics": [
+            "Project architecture & tech stack",
+            "Simple DSA & problem solving",
+            "Object oriented design"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "HR Interview",
+      "time": "20–30 min",
+      "sections": [
+        {
+          "name": "HR Discussion",
+          "topics": [
+            "Culture fit",
+            "Team work & conflict handling",
+            "Relocation & learning goals"
+          ]
+        }
+      ]
+    }
+  ],
+
+  "Infosys_Software Tester": [
+    {
+      "id": "s1",
+      "title": "Online Test (Aptitude + Reasoning + Verbal)",
+      "time": "50–60 min",
+      "sections": [
+        {
+          "name": "Aptitude",
+          "topics": [
+            "Percentages & Profit/Loss",
+            "DI sets (graphs & charts)",
+            "Simple & compound interest"
+          ]
+        },
+        {
+          "name": "Reasoning",
+          "topics": [
+            "Arrangement problems",
+            "Blood relations",
+            "Puzzles"
+          ]
+        },
+        {
+          "name": "Verbal",
+          "topics": [
+            "Grammar & tenses",
+            "Error identification",
+            "Short RC"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Testing Fundamentals Round",
+      "time": "30–40 min",
+      "sections": [
+        {
+          "name": "Testing Concepts",
+          "topics": [
+            "SDLC & STLC",
+            "Type of testing",
+            "Test design techniques"
+          ]
+        },
+        {
+          "name": "Practical QA",
+          "topics": [
+            "Bug report writing",
+            "Test case writing",
+            "Regression & smoke testing"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "Technical Interview",
+      "time": "30–40 min",
+      "sections": [
+        {
+          "name": "Scenario Based",
+          "topics": [
+            "Test cases for real apps",
+            "Finding critical bugs",
+            "Risk based testing approach"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "HR Interview",
+      "time": "20–25 min",
+      "sections": [
+        {
+          "name": "HR",
+          "topics": [
+            "Client communication",
+            "Team collaboration",
+            "Work under pressure"
+          ]
+        }
+      ]
+    }
+  ],
+
+  "Infosys_Data Analyst": [
+    {
+      "id": "s1",
+      "title": "Online Aptitude & Data Test",
+      "time": "45–60 min",
+      "sections": [
+        {
+          "name": "Quant + DI",
+          "topics": [
+            "Data tables & charts",
+            "Ratios & averages",
+            "Percent change & growth"
+          ]
+        },
+        {
+          "name": "Logic & Patterns",
+          "topics": [
+            "Pattern identification",
+            "Data sufficiency"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Analytics Tools Round",
+      "time": "30–40 min",
+      "sections": [
+        {
+          "name": "SQL Basics",
+          "topics": [
+            "Select & filter",
+            "Joins & aggregations",
+            "Group by & having"
+          ]
+        },
+        {
+          "name": "Excel / BI",
+          "topics": [
+            "Pivot, charts basics",
+            "Power BI / Tableau fundamentals"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "Technical Interview",
+      "time": "30–45 min",
+      "sections": [
+        {
+          "name": "Problem Solving",
+          "topics": [
+            "Real life data scenario",
+            "Metrics & dashboards",
+            "How to derive insights"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "HR Interview",
+      "time": "20–25 min",
+      "sections": [
+        {
+          "name": "HR",
+          "topics": [
+            "Client facing skills",
+            "Long term career in analytics"
+          ]
+        }
+      ]
+    }
+  ],
+
+  "Infosys_Support Engineer": [
+    {
+      "id": "s1",
+      "title": "Aptitude & Communication Test",
+      "time": "40–50 min",
+      "sections": [
+        {
+          "name": "Aptitude",
+          "topics": [
+            "Basic arithmetic",
+            "Logical puzzles"
+          ]
+        },
+        {
+          "name": "English & Communication",
+          "topics": [
+            "Email writing",
+            "Grammar & comprehension"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Technical Support MCQ",
+      "time": "30–35 min",
+      "sections": [
+        {
+          "name": "Technical Basics",
+          "topics": [
+            "OS, network basics",
+            "Ticketing tools awareness"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "Client / Voice Round",
+      "time": "20–30 min",
+      "sections": [
+        {
+          "name": "Scenario Questions",
+          "topics": [
+            "Handling client calls",
+            "Explaining solution clearly"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "HR Interview",
+      "time": "20–25 min",
+      "sections": [
+        {
+          "name": "HR",
+          "topics": [
+            "Shift flexibility",
+            "Stability & relocation"
+          ]
+        }
+      ]
+    }
+  ],
+
+  "Wipro_Software Developer": [
+    {
+      "id": "s1",
+      "title": "Online Assessment (Aptitude + Verbal + Coding)",
+      "time": "60–70 min",
+      "sections": [
+        {
+          "name": "Aptitude",
+          "topics": [
+            "Percentages & ratios",
+            "Time & work",
+            "DI sets"
+          ]
+        },
+        {
+          "name": "Verbal",
+          "topics": [
+            "Grammar",
+            "RC",
+            "Sentence completion"
+          ]
+        },
+        {
+          "name": "Coding (basic)",
+          "topics": [
+            "Simple coding question",
+            "Logic based problem"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Technical Interview",
+      "time": "30–45 min",
+      "sections": [
+        {
+          "name": "Programming & Concepts",
+          "topics": [
+            "Language of choice (C/Java/Python)",
+            "OOPS & DBMS basics",
+            "Simple DSA questions"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "Managerial / Fitment Round",
+      "time": "20–30 min",
+      "sections": [
+        {
+          "name": "Behaviour & Project",
+          "topics": [
+            "Project explanation",
+            "Team work & ownership"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "HR Round",
+      "time": "20–25 min",
+      "sections": [
+        {
+          "name": "HR",
+          "topics": [
+            "Role explanation",
+            "Compensation & joining"
+          ]
+        }
+      ]
+    }
+  ],
+
+  "Wipro_Software Tester": [
+    {
+      "id": "s1",
+      "title": "Online Test (Aptitude + Verbal + QA basics)",
+      "time": "50–60 min",
+      "sections": [
+        {
+          "name": "Aptitude",
+          "topics": [
+            "Numbers & percentages",
+            "Data interpretation"
+          ]
+        },
+        {
+          "name": "Verbal",
+          "topics": [
+            "Error detection",
+            "Comprehension"
+          ]
+        },
+        {
+          "name": "QA Basics",
+          "topics": [
+            "Testing concepts",
+            "Bug life cycle"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Technical (Testing) Interview",
+      "time": "30–40 min",
+      "sections": [
+        {
+          "name": "Manual Testing",
+          "topics": [
+            "Test cases",
+            "Scenarios & bug reporting"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "HR Round",
+      "time": "20–25 min",
+      "sections": [
+        {
+          "name": "HR",
+          "topics": [
+            "Client projects",
+            "Growth path"
+          ]
+        }
+      ]
+    }
+  ],
+
+  "Wipro_Data Analyst": [
+    {
+      "id": "s1",
+      "title": "Online Aptitude + Analytics Test",
+      "time": "50–60 min",
+      "sections": [
+        {
+          "name": "Aptitude & DI",
+          "topics": [
+            "Ratios",
+            "Data charts",
+            "Average & percentage"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Analytics Tools & SQL",
+      "time": "30–40 min",
+      "sections": [
+        {
+          "name": "SQL",
+          "topics": [
+            "Select & joins",
+            "Aggregations"
+          ]
+        },
+        {
+          "name": "Visualization",
+          "topics": [
+            "Charts",
+            "Dashboard basics"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "Technical + Case Interview",
+      "time": "30–40 min",
+      "sections": [
+        {
+          "name": "Case Discussion",
+          "topics": [
+            "Real data use case",
+            "KPIs & insights"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "HR Round",
+      "time": "20–25 min",
+      "sections": [
+        {
+          "name": "HR",
+          "topics": [
+            "Client interaction",
+            "Growth interest"
+          ]
+        }
+      ]
+    }
+  ],
+
+  "Wipro_Support Engineer": [
+    {
+      "id": "s1",
+      "title": "Online Test (Aptitude + English)",
+      "time": "40–50 min",
+      "sections": [
+        {
+          "name": "Aptitude",
+          "topics": [
+            "Basic math",
+            "Logic puzzles"
+          ]
+        },
+        {
+          "name": "English",
+          "topics": [
+            "Email etiquette",
+            "Grammar"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Technical Screening",
+      "time": "25–35 min",
+      "sections": [
+        {
+          "name": "Support Basics",
+          "topics": [
+            "OS fundamentals",
+            "Network basics",
+            "Troubleshooting flow"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "Client / Communication Round",
+      "time": "20–30 min",
+      "sections": [
+        {
+          "name": "Scenario Talk",
+          "topics": [
+            "Handling escalations",
+            "Talking to non‑technical users"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "HR Round",
+      "time": "20–25 min",
+      "sections": [
+        {
+          "name": "HR",
+          "topics": [
+            "Shift timing",
+            "Job expectations"
+          ]
+        }
+      ]
+    }
+  ]
+}

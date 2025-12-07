@@ -2,13 +2,13 @@ import streamlit as st
 import time
 import json
 import os
-
+import random
 from datetime import datetime
 
 st.set_page_config(page_title="AIPS — Test", page_icon="📝", layout="wide")
 
 # ---------------- AUTH CHECK ----------------
-if "logged_in" not in st.session_state or not st.session_state["logged_in"]:
+if "logged_in" not in st.session_state or not st.session_state.get("logged_in", False):
     st.switch_page("pages/2_Login.py")
 
 user = st.session_state.get("user", {})
@@ -25,7 +25,7 @@ if "active_test" not in st.session_state:
 test_info = st.session_state["active_test"]
 category = test_info["category"]
 num_questions = test_info["num_questions"]
-time_limit = test_info["time_limit"] * 60  # convert to seconds
+time_limit = test_info["time_limit"] * 60  # seconds
 
 # ---------------- TIMER SETUP ----------------
 if "start_time" not in st.session_state:
@@ -39,7 +39,8 @@ if remaining <= 0:
     st.session_state["auto_submit"] = True
 
 # ---------------- UI CSS ----------------
-st.markdown("""
+st.markdown(
+    """
 <style>
 #MainMenu, header, footer {visibility: hidden;}
 section[data-testid="stSidebar"] {display: none !important;}
@@ -78,9 +79,11 @@ html, body, [data-testid="stAppViewContainer"], .main { background: #020617; }
     font-weight: 700;
 }
 </style>
-""", unsafe_allow_html=True)
+""",
+    unsafe_allow_html=True,
+)
 
-# ---------------- HEADER (Back Disabled During Test) ----------------
+# ---------------- HEADER ----------------
 st.write("")
 st.markdown(
     f"<h3 style='color:white;'>📝 {test_info['title']}</h3>",
@@ -90,39 +93,48 @@ st.markdown(
 # ---------------- TIMER DISPLAY ----------------
 mins = remaining // 60
 secs = remaining % 60
-st.markdown(f"<div class='timer-box'>⏳ {mins:02d}:{secs:02d}</div>", unsafe_allow_html=True)
+st.markdown(
+    f"<div class='timer-box'>⏳ {mins:02d}:{secs:02d}</div>",
+    unsafe_allow_html=True,
+)
 
-# ---------------- LOAD QUESTIONS ----------------
+# ---------------- LOAD QUESTIONS (FROM JSON, ONCE) ----------------
 if "questions" not in st.session_state or len(st.session_state["questions"]) == 0:
-    # Load static questions JSON
-    questions = []
-
     # 8_Test_Screen.py is in: frontend/pages/
-# So parent folder = frontend (jaha JSON file rakhi hai)
-    base_dir = os.path.dirname(os.path.dirname(__file__))   # .../frontend
+    base_dir = os.path.dirname(os.path.dirname(__file__))  # .../frontend
     questions_path = os.path.join(base_dir, "questions_bank.json")
 
-    with open(questions_path, "r", encoding="utf-8") as f:
-        data = json.load(f)
+    try:
+        with open(questions_path, "r", encoding="utf-8") as f:
+            data = json.load(f)
+    except FileNotFoundError:
+        st.error("questions_bank.json not found. Please check file path.")
+        st.stop()
 
+    # ✅ data dict hai: { "Infosys_Software Developer": [ {...}, {...} ], ... }
+    company = user.get("company", "")
+    domain = user.get("domain", "")
 
-    data = json.load(f)
+    key = f"{company}_{domain}"
+    all_questions = data.get(key, [])
 
-    # filter
-    user_company = user.get("company", "")
-    filtered = [q for q in data if q["category"] == category and q["company"] == user_company]
+    if not all_questions:
+        st.error(f"No questions found for key: {key}. Please check questions_bank.json.")
+        st.stop()
 
-    # if shortage, pick more from same category
-    if len(filtered) < num_questions:
-        extra = [q for q in data if q["category"] == category]
-        filtered = filtered + extra
+    # jitne test me chahiye utne hi pick karo (random)
+    if len(all_questions) >= num_questions:
+        final_questions = random.sample(all_questions, num_questions)
+    else:
+        final_questions = all_questions
+        num_questions = len(final_questions)
+        st.session_state["active_test"]["num_questions"] = num_questions
 
-    # pick required number
-    final_questions = filtered[:num_questions]
     st.session_state["questions"] = final_questions
     st.session_state["user_answers"] = [""] * num_questions
     st.session_state["current_q"] = 0
 
+# ab session se lo
 questions = st.session_state["questions"]
 user_answers = st.session_state["user_answers"]
 index = st.session_state["current_q"]
@@ -130,8 +142,13 @@ question = questions[index]
 
 # ---------------- RENDER QUESTION ----------------
 st.markdown(
-    f"<h4 style='color:#f1f5f9;'>Q{index+1}. {question['question']}</h4>",
-    unsafe_allow_html=True
+    f"<h4 style='color:#f1f5f9;'>Q{index + 1} of {len(questions)}</h4>",
+    unsafe_allow_html=True,
+)
+
+st.markdown(
+    f"<h3 style='color:#e2e8f0; margin-top:6px;'>{question['question']}</h3>",
+    unsafe_allow_html=True,
 )
 
 options = question["options"]
@@ -139,9 +156,16 @@ selected = user_answers[index]
 
 for opt in options:
     selected_class = "selected-opt" if opt == selected else ""
+    # clickable button
     if st.button(opt, key=f"opt_{index}_{opt}"):
         st.session_state["user_answers"][index] = opt
-    st.markdown(f"<div class='option-card {selected_class}'>{opt}</div>", unsafe_allow_html=True)
+        selected = opt  # update local variable
+
+    # styled card under button
+    st.markdown(
+        f"<div class='option-card {selected_class}'>{opt}</div>",
+        unsafe_allow_html=True,
+    )
 
 # ---------------- QUESTION NAVIGATION ----------------
 col1, col2, col3 = st.columns([1, 6, 1])
@@ -164,18 +188,20 @@ submit_now = st.button("Submit Test ✔")
 if submit_now or st.session_state.get("auto_submit"):
     score = 0
     for i, q in enumerate(questions):
-        if user_answers[i] == q["answer"]:
+        if st.session_state["user_answers"][i] == q["answer"]:
             score += 1
 
-    percentage = (score / num_questions) * 100
+    total = len(questions)
+    percentage = (score / total) * 100 if total > 0 else 0
 
     st.session_state["test_result"] = {
         "score": score,
-        "total": num_questions,
+        "total": total,
         "percentage": percentage,
         "time_taken": time_limit - remaining,
         "timestamp": datetime.now().isoformat(),
-        "category": category
+        "category": category,
+        "title": test_info["title"],
     }
 
     st.switch_page("pages/9_Test_Results.py")
