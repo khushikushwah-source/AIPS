@@ -34,7 +34,7 @@ if "start_time" not in st.session_state:
 elapsed = int(time.time() - st.session_state["start_time"])
 remaining = max(time_limit - elapsed, 0)
 
-# auto submit when time over
+# time khatam -> auto submit flag
 if remaining <= 0:
     st.session_state["auto_submit"] = True
 
@@ -59,24 +59,27 @@ html, body, [data-testid="stAppViewContainer"], .main { background: #020617; }
     border: 1px solid #334155;
 }
 
-/* BIG OPTION CARDS */
-.option-card {
+/* radio ko card jaisa look */
+div[data-testid="stRadio"] > div {
+    background: transparent;
+}
+div[data-testid="stRadio"] label {
     background: rgba(255,255,255,0.04);
     border: 1px solid rgba(255,255,255,0.15);
-    padding: 16px;
+    padding: 12px 16px;
     border-radius: 14px;
-    margin: 10px 0;
+    margin-bottom: 10px;
+    width: 100%;
     cursor: pointer;
-    transition: 0.25s;
 }
-.option-card:hover {
-    transform: scale(1.02);
+div[data-testid="stRadio"] label:hover {
+    transform: scale(1.01);
     border-color: #3b82f6;
 }
-.selected-opt {
-    background: #0ea5e9 !important;
-    color: black !important;
-    font-weight: 700;
+
+/* pehla dummy option hide kar do (taaki visible options sab unselected lagen) */
+div[data-testid="stRadio"] > div > label:first-child {
+    display: none !important;
 }
 </style>
 """,
@@ -111,18 +114,28 @@ if "questions" not in st.session_state or len(st.session_state["questions"]) == 
         st.error("questions_bank.json not found. Please check file path.")
         st.stop()
 
-    # ✅ data dict hai: { "Infosys_Software Developer": [ {...}, {...} ], ... }
-    company = user.get("company", "")
-    domain = user.get("domain", "")
+    all_questions = []
 
-    key = f"{company}_{domain}"
-    all_questions = data.get(key, [])
+    # JSON dict: { "Infosys_Software Developer": [ {...}, {...} ], ... }
+    if isinstance(data, dict):
+        company = user.get("company", "")
+        domain = user.get("domain", "")
+        key = f"{company}_{domain}" if company and domain else None
+
+        if key and key in data:
+            all_questions = data[key]
+        else:
+            # fallback: sab company/domain ke questions mila do
+            for qs_list in data.values():
+                all_questions.extend(qs_list)
+    elif isinstance(data, list):
+        all_questions = data
 
     if not all_questions:
-        st.error(f"No questions found for key: {key}. Please check questions_bank.json.")
+        st.error("No questions found in questions_bank.json.")
         st.stop()
 
-    # jitne test me chahiye utne hi pick karo (random)
+    # jitne test me chahiye utne hi random questions lo
     if len(all_questions) >= num_questions:
         final_questions = random.sample(all_questions, num_questions)
     else:
@@ -145,27 +158,38 @@ st.markdown(
     f"<h4 style='color:#f1f5f9;'>Q{index + 1} of {len(questions)}</h4>",
     unsafe_allow_html=True,
 )
-
 st.markdown(
     f"<h3 style='color:#e2e8f0; margin-top:6px;'>{question['question']}</h3>",
     unsafe_allow_html=True,
 )
 
 options = question["options"]
-selected = user_answers[index]
 
-for opt in options:
-    selected_class = "selected-opt" if opt == selected else ""
-    # clickable button
-    if st.button(opt, key=f"opt_{index}_{opt}"):
-        st.session_state["user_answers"][index] = opt
-        selected = opt  # update local variable
+# ----- RADIO: koi label nahi, koi real option preselect nahi -----
+current_sel = user_answers[index] if user_answers[index] in options else None
 
-    # styled card under button
-    st.markdown(
-        f"<div class='option-card {selected_class}'>{opt}</div>",
-        unsafe_allow_html=True,
-    )
+# dummy + real options
+DUMMY_VALUE = "__none__"
+radio_options = [DUMMY_VALUE] + options
+
+if current_sel:
+    default_index = 1 + options.index(current_sel)  # shift by 1 (dummy)
+else:
+    default_index = 0  # sirf dummy selected (jo CSS se hidden hai)
+
+selected = st.radio(
+    "",
+    radio_options,
+    index=default_index,
+    key=f"q_{index}",
+    label_visibility="collapsed",
+)
+
+# dummy ko ignore karo
+if selected == DUMMY_VALUE:
+    st.session_state["user_answers"][index] = ""
+else:
+    st.session_state["user_answers"][index] = selected
 
 # ---------------- QUESTION NAVIGATION ----------------
 col1, col2, col3 = st.columns([1, 6, 1])
@@ -188,7 +212,7 @@ submit_now = st.button("Submit Test ✔")
 if submit_now or st.session_state.get("auto_submit"):
     score = 0
     for i, q in enumerate(questions):
-        if st.session_state["user_answers"][i] == q["answer"]:
+        if st.session_state["user_answers"][i] == q.get("answer"):
             score += 1
 
     total = len(questions)
@@ -205,3 +229,9 @@ if submit_now or st.session_state.get("auto_submit"):
     }
 
     st.switch_page("pages/9_Test_Results.py")
+
+# ---------------- AUTO REFRESH FOR LIVE TIMER ----------------
+# jab tak time bacha hai aur submit nahi hua, har 1 second me page rerun
+if remaining > 0 and not st.session_state.get("auto_submit"):
+    time.sleep(1)
+    st.rerun()
