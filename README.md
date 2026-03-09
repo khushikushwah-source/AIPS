@@ -66,7 +66,7 @@ Database (Firebase / JSON Storage)
 
 Installation
 Clone Repository
-git clone https://github.com/KhushiKushwah/AIPS.git
+git clone https://github.com/khushikushwah-source/AIPS.git
 cd AIPS
 Install Dependencies
 pip install -r requirements.txt
@@ -114,3 +114,4 @@ Author
 Khushi Kushwah
 
 Major Project – AI‑Based Interview & Placement Support System (AIPS)
+
