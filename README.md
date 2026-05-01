@@ -1,117 +1,70 @@
-AIPS – AI‑Based Interview & Placement Support System
-AI-powered interview and placement preparation platform that allows students to practice aptitude and technical tests, automatically evaluate their performance, and analyze results through graphical insights.
+# Getting Started with Create React App
 
-Overview
-AIPS (AI‑Based Interview & Placement Support System) is a smart preparation platform designed to help students improve their readiness for placement exams and technical interviews.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-The system allows users to attempt placement‑level tests in an interactive environment with a timer and automatic evaluation. After completing the test, users receive a detailed performance analysis including score, accuracy, and graphical insights.
+## Available Scripts
 
-This project integrates Artificial Intelligence concepts, automation logic, and data visualization to make placement preparation more efficient and accessible.
+In the project directory, you can run:
 
-Features
-• User authentication system
-• Online aptitude and technical tests
-• Timer‑based test environment
-• Automatic answer evaluation
-• Performance analysis with graphs
-• Score and accuracy calculation
-• User-friendly interface
-• Multiple test attempts for practice
+### `npm start`
 
-Technology Stack
-Frontend
-Streamlit
-HTML
-CSS
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-Backend
-Python
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-Data Handling
-Pandas
-JSON (Question Bank)
+### `npm test`
 
-Visualization
-Matplotlib / Graph Charts
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-Database
-Firebase Authentication
-Firebase Database
+### `npm run build`
 
-System Architecture
-User
-│
-▼
-User Login / Authentication
-│
-▼
-Frontend Interface (Streamlit Web UI)
-│
-▼
-Backend Application (Python Logic)
-│
-├── Test Selection Module
-├── Question Engine
-├── Timer Management
-├── Answer Evaluation System
-│
-▼
-Result Processing Module
-│
-▼
-Performance Analysis (Graphs & Score)
-│
-▼
-Database (Firebase / JSON Storage)
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-Installation
-Clone Repository
-git clone https://github.com/khushikushwah-source/AIPS.git
-cd AIPS
-Install Dependencies
-pip install -r requirements.txt
-Run Application
-streamlit run app.py
-Project Structure
-AIPS
-│
-├── app.py
-├── requirements.txt
-│
-├── modules
-│   ├── authentication
-│   ├── test_engine
-│   ├── evaluation
-│   └── result_analysis
-│
-├── database
-│   └── firebase_config
-│
-├── question_bank
-│   └── questions.json
-│
-├── assets
-│   └── images
-│
-└── README.md
-Applications
-Placement preparation platforms
-Online learning systems
-University assessment portals
-Interview preparation tools
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-Future Improvements
-AI‑based personalized test recommendations
-NLP‑based interview answer analysis
-Resume screening system
-Voice‑based mock interviews
-Advanced analytics dashboard
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-License
-This project is developed for academic and educational purposes.
+### `npm run eject`
 
-Author
-Khushi Kushwah
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-Major Project – AI‑Based Interview & Placement Support System (AIPS)
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
